@@ -1,0 +1,81 @@
+.mat-toolbar {
+  background-color: #6591c3;
+  box-shadow: 0 2px 2px #c51a1a33;
+  position: sticky;
+  position: -webkit-sticky; 
+  top: 0;
+  z-index: 1000; 
+
+  .logo {
+    margin-left: 60px;
+    height: 60spx;
+    width: 150px;
+  }
+
+  .mat-icon-button,
+  .mat-icon {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+
+  .search-box {
+    margin-right: 10px;
+    .search-input {
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 50px;
+      padding: 2px 5px 2px 20px;
+      width: 270px;
+      border-radius: 50px;
+      border: none;
+      outline: none !important;
+      background: rgb(246, 245, 245);
+    }
+    .close-button {
+      margin-left: -35px;
+    }
+  }
+
+  .mat-select {
+    text-transform: capitalize;
+
+    .additional-selection {
+      text-transform: lowercase;
+      opacity: 0.85;
+      font-size: 0.85em;
+    }
+  }
+
+
+  .filter-component {
+    margin-left: 83px;
+    .filter {
+      margin-right: 12px;
+    }
+    
+    .form-field {
+      width: auto;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+.mat-toolbar {
+  display: table;
+  padding: 20px;
+  text-align: center;
+  }
+
+  .pokemon-logo {
+    display: none;
+  }
+
+  .search-input,
+  .search-box,
+  .filter-component {
+    margin: 5px 0px !important;
+  }
+
+}

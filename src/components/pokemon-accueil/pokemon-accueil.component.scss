@@ -1,0 +1,20 @@
+.search-pok {
+  margin-right: 10px;
+  .search-input {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+    padding: 2px 5px 2px 20px;
+    width: 290px;
+    border-radius: 50px;
+    border: none;
+    outline: none !important;
+    background: rgb(255, 255, 255);
+  }
+  .search-button {
+    margin-left: -9px;
+    background: rgb(146, 146, 167);
+    font-size: 18px;
+ 
+  }
+}
