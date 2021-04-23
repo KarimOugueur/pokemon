@@ -12,8 +12,8 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.navLinks = [
        {
-        label: 'Accueil',
-        link: 'accueil',
+        label: 'Home',
+        link: 'home',
         index: 0
       },
       {

@@ -37,6 +37,7 @@ export interface PokemonDetails {
   sprites: Sprites;
   abilities?: Array<any>;
   types?: Array<any>;
+  abilitiess:Ability[];
   
 }
 

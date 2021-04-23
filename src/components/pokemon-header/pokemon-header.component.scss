@@ -1,6 +1,6 @@
 .mat-toolbar {
-  background-color: #6591c3;
-  box-shadow: 0 2px 2px #c51a1a33;
+  background-color: #cf2a2a;
+  box-shadow: 0 2px 2px #9c797933;
   position: sticky;
   position: -webkit-sticky; 
   top: 0;
@@ -59,6 +59,12 @@
       margin-top: 10px;
     }
   }
+}
+.headerButton {
+  color: currentColor; 
+  padding: 08px;
+  background-color: #cf2a2a;
+  margin-left: 83px;
 }
 
 @media only screen and (max-width: 500px) {

@@ -1,7 +1,7 @@
 <div style="text-align:center">
   
 <h1>
-  Welcome from {{ pokemon.name }}!
+  Welcome from {{ pokemon }}!
 </h1>
 
 <img width="400" alt="Pokemon sprite" src={{pokemon.sprites.front_default}}>
@@ -15,5 +15,4 @@
         name="pokemonName" #pokemonName> 
       <button class="search-button" type="button" (click)="clickme(pokemonName.value)">Search</button>
   </div>
-
  

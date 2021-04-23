@@ -53,7 +53,10 @@ export class PokemonService {
  * @returns 
  */
   getPokemonInfo(id:string): Observable<PokemonDetails>{
-    return this.http.get<PokemonDetails>(this.pokeAPI + id + '/');
+    return this.http
+    .get<PokemonDetails>(this.pokeAPI + '/'+ id + '/')
+    .pipe(catchError(this._handleError));
+    
   }
 
   /**
