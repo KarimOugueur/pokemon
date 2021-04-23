@@ -14,7 +14,19 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from 'src/components/home/home.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { PokemonAccueilComponent } from 'src/components/pokemon-accueil/pokemon-accueil.component';
-import {PokemonPookdexComponent } from 'src/components/pokemon-pookdex/pokemon-pookdex.component'
+import {PokemonPookdexComponent } from 'src/components/pokemon-pookdex/pokemon-pookdex.component';
+import { PokeInfoComponent } from 'src/app/poke-info/poke-info.component'
+import { RouterModule, Routes } from '@angular/router';
+import { PokeNavComponent } from './poke-nav/poke-nav.component';
+
+
+
+const appRoutes: Routes = [
+  { path: 'pokemon/:id', component:PokeNavComponent },
+  { path: '', component: PokemonAccueilComponent },
+  {path : 'pokedex', component : PokemonPookdexComponent}
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +37,9 @@ import {PokemonPookdexComponent } from 'src/components/pokemon-pookdex/pokemon-p
     PokemonAccueilComponent,
     SearchPipe, 
     TypeFilterPipe,
-    AbilitiesFilterPipe
+    AbilitiesFilterPipe,
+    PokeInfoComponent,
+    PokeNavComponent
     
   ],
   imports: [
@@ -35,7 +49,8 @@ import {PokemonPookdexComponent } from 'src/components/pokemon-pookdex/pokemon-p
     MaterialModule,
     FormsModule,
     MatTabsModule, 
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

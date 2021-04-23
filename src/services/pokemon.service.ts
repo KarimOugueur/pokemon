@@ -13,6 +13,7 @@ export class PokemonService {
   pokeAPI: any;
   pokeSpeciesAPI: any;
   pokeEvolution:any;
+  nametopass : string;
  
   constructor(private http: HttpClient) {
     this.pokeAPI = environment.pokemonURL;
@@ -27,7 +28,7 @@ export class PokemonService {
    */
   getPokemon(): Observable<PokeAPI> {
     return this.http
-      .get<PokeAPI>(`${this.pokeAPI}?limit=200`)
+      .get<PokeAPI>(`${this.pokeAPI}?limit=151`)
       .pipe(catchError(this._handleError));
   }
 /**
@@ -90,5 +91,8 @@ export class PokemonService {
     }
     // return an observable with a user-facing error message
     return throwError('Something bad happened; please try again later.');
+  }
+   setname(name : string) : void {
+    this.nametopass = name;
   }
 }

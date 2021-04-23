@@ -16,11 +16,14 @@ export class PokemonAccueilComponent implements OnInit {
   @Output() typeSelected = new EventEmitter();
 
   pokemons: PokeAPI;
-  pokemon:any; 
+  pokemon: any; 
   pokemonAccueilAPI = environment.PokemonaccueilURL;
   selectedPokeId: string = '';
 
   constructor(private http:HttpClient,private pokemonService: PokemonService) {}
+
+  Name : string = "";
+  bool : boolean =false;
 
   ngOnInit(): void {
     this.getPokemons();
@@ -42,5 +45,23 @@ export class PokemonAccueilComponent implements OnInit {
  
       this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data=>this.pokemon=data); 
   }
- 
+
+
+/**
+ * maj
+ */
+public maj(name : string) {
+  this.pokemonService.getPokemonDetails(name).subscribe((data)=> console.log(data));
+  this.Name=name;
+  this.pokemonService.setname(name);
+  this.bool = true;
+
+}
+getName() : string {
+  console.log(this.pokemon);
+  return this.pokemon.name;
+  
+
+}
+
 }

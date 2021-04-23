@@ -1,8 +1,12 @@
 <div style="text-align:center">
   
+
 <h1>
   Welcome from {{ pokemon }}!
 </h1>
+
+ <h1> Welcome from {{this.getName()}}</h1>
+
 
 <img width="400" alt="Pokemon sprite" src={{pokemon.sprites.front_default}}>
 
@@ -13,6 +17,15 @@
         type="text"
         placeholder="Enter Pokemon name or id..."
         name="pokemonName" #pokemonName> 
-      <button class="search-button" type="button" (click)="clickme(pokemonName.value)">Search</button>
+        
+      <button class="search-button" type="button" (click)="clickme(pokemonName.value)">Select
+
+      </button>
+    </div>
+<div *ngIf="this.bool"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->
+    <app-poke-info [Name]=Name></app-poke-info>
+    <app-poke-nav></app-poke-nav>
+    </div>
+      
   </div>
  
