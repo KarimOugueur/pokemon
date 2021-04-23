@@ -11,11 +11,12 @@
         <mat-card-title>{{ pokemon.name | titlecase }}</mat-card-title>
         <div class="id">{{ pokemon.id }}</div>
         <div class="background-image">
-          <img
+          <a routerLink='/pokemon/{{pokemon.name}}'> <img
             mat-card-image
             src="{{ pokemon.details.sprites.front_default }}"
             alt="photo of {{ pokemon.name}}"
-          />
+          /></a>
+        
         </div>
         
         <mat-card-content>
