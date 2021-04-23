@@ -4,6 +4,7 @@ import { environment } from 'src/environments/environment';
 import { PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS } from 'src/interfaces';
 import { PokemonService } from 'src/services/pokemon.service';
 import { PokemonServiceInfoPokemonService } from 'src/services/pokemon-service-info-pokemon.service'
+
 @Component({
   selector: 'app-pokemon-accueil',
   templateUrl: './pokemon-accueil.component.html',
@@ -26,10 +27,6 @@ export class PokemonAccueilComponent implements OnInit {
   bool : boolean =false;
 
   constructor(private http:HttpClient,private pokemonService: PokemonService, private pokemonServiceInfo: PokemonServiceInfoPokemonService) {}
-  constructor(private http:HttpClient,private pokemonService: PokemonService) {}
-
-  Name : string = "";
-  bool : boolean =false;
 
   ngOnInit(): void {
     this.getPokemons();
@@ -37,10 +34,10 @@ export class PokemonAccueilComponent implements OnInit {
 
   clickme(name:string):void {
     if (name !=''){
-      this.pokemonAccueilAPI = environment.pokemonURL+'/'+name+'/';
-      this.getPokemons();
-      this.pokemonService.getPokemonInfo(name).subscribe((data)=> this.pokemonDetail= data);
-      this.pokemonServiceInfo.setVelue(name);
+    this.pokemonAccueilAPI = environment.pokemonURL+'/'+name+'/';
+    this.getPokemons();
+    this.pokemonService.getPokemonInfo(name).subscribe((data)=> this.pokemonDetail= data);
+    this.pokemonServiceInfo.setVelue(name);
     }
   }
 
