@@ -2,13 +2,13 @@
   background-color: #cf2a2a;
   box-shadow: 0 2px 2px #9c797933;
   position: sticky;
-  position: -webkit-sticky; 
+  position: -webkit-sticky;
   top: 0;
-  z-index: 1000; 
+  z-index: 1000;
 
   .logo {
     margin-left: 60px;
-    height: 60spx;
+    height: 60px;
     width: 150px;
   }
 
@@ -53,7 +53,7 @@
     .filter {
       margin-right: 12px;
     }
-    
+
     .form-field {
       width: auto;
       margin-top: 10px;
@@ -61,7 +61,7 @@
   }
 }
 .headerButton {
-  color: currentColor; 
+  color: currentColor;
   padding: 08px;
   background-color: #cf2a2a;
   margin-left: 83px;

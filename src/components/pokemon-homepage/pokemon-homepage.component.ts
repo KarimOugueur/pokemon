@@ -10,16 +10,16 @@ import { PokemonService } from 'src/services/pokemon.service';
 export class PokemonHomepageComponent implements OnInit {
   @Output() exportPokemons = new EventEmitter();
   @Output() typeSelected = new EventEmitter();
- 
+
   pokemonsLoaded: boolean;
   pokemons: PokeAPI; // POKEAPI a la base
   query: string;
   abilityFilters: Array<string>;
   typeFilters: string;
-  currentType: String; 
+  currentType: String;
   types: Array<string>;
   pokemonList: Array<Results>;
-  
+
   @Input() set search(newSearch: string) {
     if (newSearch !== this.query) {
       this.query = newSearch;
@@ -54,7 +54,7 @@ export class PokemonHomepageComponent implements OnInit {
     this.types = [];
     this.getPokemons();
   }
-
+s
   /**
    * Loads in all 200 Original pokemon and gets
    * their details and species details
@@ -86,7 +86,7 @@ export class PokemonHomepageComponent implements OnInit {
       .getPokemonDetails(pokemon.name)
       .subscribe((details: PokemonDetails) => {
         pokemon.details = details;
-        
+
         // when last pokemon details have been loaded
         // send pokemons to header component
         if (pokemon.id === '200') {

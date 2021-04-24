@@ -10,5 +10,5 @@ import { Results } from './../interfaces';
 })
 
 export class AppComponent {
-  constructor(){}
+  constructor() { }
 }

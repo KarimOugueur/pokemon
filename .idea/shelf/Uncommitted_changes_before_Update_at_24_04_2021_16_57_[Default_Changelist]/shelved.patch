@@ -1,0 +1,216 @@
+Index: src/components/pokemon-header/pokemon-header.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><mat-toolbar>\n  <img\n    class=\"logo\"\n    src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png\"\n  />\n  <div class=\"search-box\">\n    <input\n      matInput\n      class=\"search-input\"\n      type=\"text\"\n      [(ngModel)]=\"search\"\n      (ngModelChange)=\"searchEvent()\"\n      placeholder=\"Enter Pokemon name or id...\"\n    />\n    <button\n      mat-button\n      class=\"close-button\"\n      *ngIf=\"search\"\n      matSuffix\n      mat-icon-button\n      aria-label=\"Clear\"\n      (click)=\"searchEvent('')\"\n    >\n      <mat-icon>close</mat-icon>\n    </button>\n  </div>\n\n  <div class=\"filter-component\">\n    <mat-label class=\"filter\">Filter by Abilities</mat-label>\n    <mat-form-field class=\"form-field\">\n      <mat-select [(ngModel)]=\"currentAbilities\" (ngModelChange)=\"onAbilitySelected()\" multiple>\n          <mat-select-trigger>\n              {{currentAbilities ? currentAbilities[0]: ''}}\n              <span *ngIf=\"currentAbilities?.length > 1\" class=\"additional-selection\">\n                (+{{currentAbilities.length - 1}} {{currentAbilities?.length === 2 ? 'other' : 'others'}})\n              </span>\n            </mat-select-trigger>\n        <mat-option *ngFor=\"let ability of abilities\" [value]=\"ability\">\n          {{ ability | titlecase }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n\n <div class=\"filter-component\">\n    <mat-label class=\"filter\">Filter by Type</mat-label>\n    <mat-form-field class=\"form-field\">\n      <mat-select [(ngModel)]=\"currentType\" (ngModelChange)=\"onTypeSelected()\">\n        <mat-option>None</mat-option>\n        <mat-option *ngFor=\"let type of types\" [value]=\"type\">\n          {{ type | titlecase }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n\n  <button class=\"headerButton\" (click)=\"btnClick('')\"> Home</button>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-header/pokemon-header.component.html b/src/components/pokemon-header/pokemon-header.component.html
+--- a/src/components/pokemon-header/pokemon-header.component.html	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
++++ b/src/components/pokemon-header/pokemon-header.component.html	(date 1619275571855)
+@@ -54,4 +54,4 @@
+     </mat-form-field>
+   </div>
+ 
+-  <button class="headerButton" (click)="btnClick('')"> Home</button>
+\ No newline at end of file
++  <button class="headerButton" (click)="btnClick('')"> Home</button>
+Index: src/components/pokemon-accueil/pokemon-accueil.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div style=\"text-align:center\">\n\n <h1> Welcome from {{this.getName()}}</h1>\n\n<img width=\"400\" alt=\"Pokemon sprite\" src={{pokemon.sprites.front_default}}>\n\n    <div class=\"search-pok\">\n      <input\n        matInput\n        class=\"search-input\"\n        type=\"text\"\n        placeholder=\"Enter Pokemon name or id...\"\n        name=\"pokemonName\" #pokemonName>\n\n      <button class=\"search-button\" type=\"button\" (click)=\"clickme(pokemonName.value)\">Select\n\n      </button>\n    </div>\n<div *ngIf=\"this.bool\"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->\n    <app-poke-info [Name]=Name></app-poke-info>\n    <app-poke-nav></app-poke-nav>\n    </div>\n\n  </div>\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-accueil/pokemon-accueil.component.html b/src/components/pokemon-accueil/pokemon-accueil.component.html
+--- a/src/components/pokemon-accueil/pokemon-accueil.component.html	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
++++ b/src/components/pokemon-accueil/pokemon-accueil.component.html	(date 1619215862943)
+@@ -1,25 +1,25 @@
+ <div style="text-align:center">
+ 
+- <h1> Welcome from {{this.getName()}}</h1>
++  <h1> Welcome from {{this.getName()}}</h1>
+ 
+-<img width="400" alt="Pokemon sprite" src={{pokemon.sprites.front_default}}>
++  <img width="400" alt="Pokemon sprite" src={{pokemon.sprites.front_default}}>
+ 
+-    <div class="search-pok">
+-      <input
+-        matInput
+-        class="search-input"
+-        type="text"
+-        placeholder="Enter Pokemon name or id..."
+-        name="pokemonName" #pokemonName>
++  <div class="search-pok">
++    <input
++      matInput
++      class="search-input"
++      type="text"
++      placeholder="Enter Pokemon name or id..."
++      name="pokemonName" #pokemonName>
+ 
+-      <button class="search-button" type="button" (click)="clickme(pokemonName.value)">Select
++    <button class="search-button" type="button" (click)="clickme(pokemonName.value)">Select
+ 
+-      </button>
+-    </div>
+-<div *ngIf="this.bool"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->
++    </button>
++  </div>
++  <div *ngIf="this.bool"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->
+     <app-poke-info [Name]=Name></app-poke-info>
+     <app-poke-nav></app-poke-nav>
+-    </div>
++  </div>
+ 
+-  </div>
++</div>
+ 
+Index: src/components/pokemon-accueil/pokemon-accueil.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { HttpClient } from '@angular/common/http';\nimport { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { environment } from 'src/environments/environment';\nimport { PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS } from 'src/interfaces';\nimport { PokemonService } from 'src/services/pokemon.service';\nimport { PokemonServiceInfoPokemonService } from 'src/services/pokemon-service-info-pokemon.service'\n\n@Component({\n  selector: 'app-pokemon-accueil',\n  templateUrl: './pokemon-accueil.component.html',\n  styleUrls: ['./pokemon-accueil.component.scss'],\n  providers:  [PokemonService]\n})\n\nexport class PokemonAccueilComponent implements OnInit {\n  @Output() exportPokemons = new EventEmitter();\n  @Output() typeSelected = new EventEmitter();\n\n  pokemonDetail!: PokemonDetails;\n  pokemons: PokeAPI;\n  pokemon: any;\n  pokemonAccueilAPI = environment.PokemonaccueilURL;\n  selectedPokeId: string = '';\n\n\n  Name : string = \"\";\n  bool : boolean =false;\n\n  constructor(private http:HttpClient,private pokemonService: PokemonService, private pokemonServiceInfo: PokemonServiceInfoPokemonService) {}\n\n  ngOnInit(): void {\n    this.getPokemons();\n  }\n\n  clickme(name:string):void {\n    if (name !=''){\n    this.pokemonAccueilAPI = environment.pokemonURL+'/'+name+'/';\n    this.getPokemons();\n    this.pokemonService.getPokemonInfo(name).subscribe((data)=> this.pokemonDetail= data);\n    this.pokemonServiceInfo.setVelue(name);\n    }\n  }\n\n  /**\n   * Loads in all 200 Original pokemon and gets\n   * their details and species details\n   */\n  getPokemons(): void {\n\n      this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data=>this.pokemon=data);\n  }\n/**\n * maj\n */\npublic maj(name : string) {\n  this.pokemonService.getPokemonDetails(name).subscribe((data)=> console.log(data));\n  this.Name=name;\n  this.pokemonService.setname(name);\n  this.bool = true;\n\n}\ngetName() : string {\n  console.log(this.pokemon);\n  return this.pokemon.name;\n\n\n}\n\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-accueil/pokemon-accueil.component.ts b/src/components/pokemon-accueil/pokemon-accueil.component.ts
+--- a/src/components/pokemon-accueil/pokemon-accueil.component.ts	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
++++ b/src/components/pokemon-accueil/pokemon-accueil.component.ts	(date 1619215495035)
+@@ -1,15 +1,15 @@
+-import { HttpClient } from '@angular/common/http';
+-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+-import { environment } from 'src/environments/environment';
+-import { PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS } from 'src/interfaces';
+-import { PokemonService } from 'src/services/pokemon.service';
+-import { PokemonServiceInfoPokemonService } from 'src/services/pokemon-service-info-pokemon.service'
++import {HttpClient} from '@angular/common/http';
++import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
++import {environment} from 'src/environments/environment';
++import {PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS} from 'src/interfaces';
++import {PokemonService} from 'src/services/pokemon.service';
++
+ 
+ @Component({
+   selector: 'app-pokemon-accueil',
+   templateUrl: './pokemon-accueil.component.html',
+   styleUrls: ['./pokemon-accueil.component.scss'],
+-  providers:  [PokemonService]
++  providers: [PokemonService]
+ })
+ 
+ export class PokemonAccueilComponent implements OnInit {
+@@ -20,24 +20,22 @@
+   pokemons: PokeAPI;
+   pokemon: any;
+   pokemonAccueilAPI = environment.PokemonaccueilURL;
+-  selectedPokeId: string = '';
+-
++  selectedPokeId = '';
++  Name = '';
++  bool = false;
+ 
+-  Name : string = "";
+-  bool : boolean =false;
+-
+-  constructor(private http:HttpClient,private pokemonService: PokemonService, private pokemonServiceInfo: PokemonServiceInfoPokemonService) {}
++  constructor(private http: HttpClient, private pokemonService: PokemonService) {
++  }
+ 
+   ngOnInit(): void {
+     this.getPokemons();
+   }
+ 
+-  clickme(name:string):void {
+-    if (name !=''){
+-    this.pokemonAccueilAPI = environment.pokemonURL+'/'+name+'/';
+-    this.getPokemons();
+-    this.pokemonService.getPokemonInfo(name).subscribe((data)=> this.pokemonDetail= data);
+-    this.pokemonServiceInfo.setVelue(name);
++  clickme(name: string): void {
++    // tslint:disable-next-line:triple-equals
++    if (name != '') {
++      this.pokemonAccueilAPI = environment.pokemonURL + '/' + name + '/';
++      this.getPokemons();
+     }
+   }
+ 
+@@ -47,24 +45,26 @@
+    */
+   getPokemons(): void {
+ 
+-      this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data=>this.pokemon=data);
++    this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data => this.pokemon = data);
+   }
+-/**
+- * maj
+- */
+-public maj(name : string) {
+-  this.pokemonService.getPokemonDetails(name).subscribe((data)=> console.log(data));
+-  this.Name=name;
+-  this.pokemonService.setname(name);
+-  this.bool = true;
++
++  /**
++   * maj
++   */
++  public maj(name: string) {
++    this.pokemonService.getPokemonDetails(name).subscribe((data) => console.log(data));
++    this.Name = name;
++    this.pokemonService.setname(name);
++    this.bool = true;
+ 
+-}
+-getName() : string {
+-  console.log(this.pokemon);
+-  return this.pokemon.name;
++  }
++
++  getName(): string {
++    console.log(this.pokemon);
++    return this.pokemon.name;
+ 
+ 
+-}
++  }
+ 
+ 
+ }
+Index: src/components/pokemon-homepage/pokemon-homepage.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div class=\"loading\" *ngIf=\"!pokemonsLoaded\">\n  <mat-spinner></mat-spinner>\n  LOADING POKEMONS...... \n</div>\n\n<div style=\"text-align:center\">\n  <div class=\"grid-layout\" *ngIf=\"pokemonsLoaded && pokemons\">\n    <div\n      *ngFor=\"let pokemon of pokemons.results | search: query | typeFilter: typeFilters | abilitiesFilter: abilityFilters\">\n      <mat-card class=\"pokemon-card\" *ngIf=\"pokemon.details\">\n        <mat-card-title>{{ pokemon.name | titlecase }}</mat-card-title>\n        <div class=\"id\">{{ pokemon.id }}</div>\n        <div class=\"background-image\">\n          <a routerLink='/pokemon/{{pokemon.name}}'> <img\n            mat-card-image\n            src=\"{{ pokemon.details.sprites.front_default }}\"\n            alt=\"photo of {{ pokemon.name}}\"\n          /></a>\n        \n        </div>\n        \n        <mat-card-content>\n          <div style=\"display: block;\">\n            <div\n              *ngFor=\"let type of pokemon.details.types\"\n              class=\"types\"\n              [style.background]=\"getTypeColour(type.type.name)\">\n              {{ type.type.name | titlecase }}\n            </div>\n          </div>\n        </mat-card-content>\n      </mat-card>\n    </div>\n  </div>\n</div>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-homepage/pokemon-homepage.component.html b/src/components/pokemon-homepage/pokemon-homepage.component.html
+--- a/src/components/pokemon-homepage/pokemon-homepage.component.html	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
++++ b/src/components/pokemon-homepage/pokemon-homepage.component.html	(date 1619217087317)
+@@ -16,9 +16,7 @@
+             src="{{ pokemon.details.sprites.front_default }}"
+             alt="photo of {{ pokemon.name}}"
+           /></a>
+-        
+         </div>
+-        
+         <mat-card-content>
+           <div style="display: block;">
+             <div
+Index: src/components/pokemon-homepage/pokemon-homepage.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { PokeAPI, PokemonDetails, Results, TYPE_COLOURS } from 'src/interfaces';\nimport { PokemonService } from 'src/services/pokemon.service';\n\n@Component({\n  selector: 'app-pokemon-homepage',\n  templateUrl: './pokemon-homepage.component.html',\n  styleUrls: ['./pokemon-homepage.component.scss']\n})\nexport class PokemonHomepageComponent implements OnInit {\n  @Output() exportPokemons = new EventEmitter();\n  @Output() typeSelected = new EventEmitter();\n \n  pokemonsLoaded: boolean;\n  pokemons: PokeAPI;\n  query: string;\n  abilityFilters: Array<string>;\n  typeFilters: string;\n  currentType: String; \n  types: Array<string>;\n  pokemonList: Array<Results>;\n  \n  @Input() set search(newSearch: string) {\n    if (newSearch !== this.query) {\n      this.query = newSearch;\n    }\n  }\n\n  @Input() set typeFilter(type: string) {\n    if (type !== this.typeFilter) {\n      this.typeFilters = type;\n    }\n  }\n\n  @Input() set abilityFilter(abilities: Array<string>) {\n    if (abilities !== this.abilityFilters) {\n      this.abilityFilters = abilities;\n    }\n  }\n\n  @Input() set pokemonsType(pokemons: Results[]) {\n    if (pokemons !== this.pokemonList) {\n      this.pokemonList = pokemons;\n      this.pokemonList.forEach(pokemon => {\n        this.setPokemonTypes(pokemon);\n      });\n    }\n  }\n\n  constructor(private pokemonService: PokemonService) {}\n\n  ngOnInit(): void {\n    this.pokemonsLoaded = false;\n    this.types = [];\n    this.getPokemons();\n  }\n\n  /**\n   * Loads in all 200 Original pokemon and gets\n   * their details and species details\n   */\n  getPokemons(): void {\n    this.pokemonService.getPokemon().subscribe((data: PokeAPI) => {\n      this.pokemons = data;\n\n      if (this.pokemons.results && this.pokemons.results.length) {\n        // get pokemon details for every pokemon\n        this.pokemons.results.forEach(pokemon => {\n          // set pokemon id\n          pokemon.id = pokemon.url.split('/')[\n            pokemon.url.split('/').length - 2\n          ];\n\n          this.getPokemonDetails(pokemon);\n          this.getPokemonSpeciesDetails(pokemon);\n        });\n      }\n    });\n  }\n\n  /**\n   * Gets and sets a pokemons details\n   */\n  getPokemonDetails(pokemon: Results): void {\n    this.pokemonService\n      .getPokemonDetails(pokemon.name)\n      .subscribe((details: PokemonDetails) => {\n        pokemon.details = details;\n        \n        // when last pokemon details have been loaded\n        // send pokemons to header component\n        if (pokemon.id === '200') {\n          this.pokemonsLoaded = true;\n          this.exportPokemons.emit(this.pokemons.results);\n        }\n      });\n  }\n\n  getPokemonSpeciesDetails(pokemon: Results): void {\n    this.pokemonService\n      .getPokemonSpecies(pokemon.name)\n      .subscribe((species: any) => {\n        const entries = species.flavor_text_entries;\n        if (entries) {\n          entries.some(flavor => {\n            if (flavor.language.name === 'en') {\n              pokemon.description = flavor.flavor_text;\n            }\n          });\n        }\n      });\n  }\n\n /**\n   * Called when a type has been selected\n   */\n  onTypeSelected(): void {\n    if (this.currentType) {\n      this.typeSelected.emit(this.currentType);\n    } else {\n      this.typeSelected.emit('');\n    }\n  }\n\n  /**\n   * Grabs a pokemons types and adds to array\n   */\n  setPokemonTypes(pokemon: Results): void {\n    if (pokemon) {\n      pokemon.details.types.forEach(type => {\n        const typeName = type.type.name;\n        if (!this.types.includes(typeName)) {\n          this.types.push(typeName);\n          this.types.sort();\n        }\n      });\n    }\n  }\n\n  /**\n   * returns colour based on type mapped\n   * in TYPE_COLOURS interface\n   */\n  getTypeColour(type: string): string {\n    if (type) {\n      return '#' + TYPE_COLOURS[type];\n    }\n  }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-homepage/pokemon-homepage.component.ts b/src/components/pokemon-homepage/pokemon-homepage.component.ts
+--- a/src/components/pokemon-homepage/pokemon-homepage.component.ts	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
++++ b/src/components/pokemon-homepage/pokemon-homepage.component.ts	(date 1619216402173)
+@@ -54,7 +54,7 @@
+     this.types = [];
+     this.getPokemons();
+   }
+-
++s
+   /**
+    * Loads in all 200 Original pokemon and gets
+    * their details and species details
