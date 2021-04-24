@@ -11,7 +11,7 @@ import {PokemonService} from 'src/services/pokemon.service'
 export class PokeNavComponent implements OnInit {
 
   name : string;
-  data : PokemonDetails;
+  data : PokemonDetails ;
   constructor(private pokeService : PokemonService,private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -20,7 +20,9 @@ export class PokeNavComponent implements OnInit {
   
   }
   private getSprites(): string{
-    return this.data.sprites.front_default;
+ return this.data.sprites.front_default;
+  
+    
   }
 
 }

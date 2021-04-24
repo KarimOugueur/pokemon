@@ -12,7 +12,7 @@ export class PokemonHomepageComponent implements OnInit {
   @Output() typeSelected = new EventEmitter();
  
   pokemonsLoaded: boolean;
-  pokemons: PokeAPI;
+  pokemons: PokeAPI; // POKEAPI a la base
   query: string;
   abilityFilters: Array<string>;
   typeFilters: string;
