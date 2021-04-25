@@ -17,18 +17,18 @@ export enum TYPE_COLOURS {
   flying = 'A3B3F7',
   ghost = '4F3A2D',
   grass = '74C236'
- 
+
 }
 
 export interface Ability {
-  ability:   Species;
+  ability: Species;
   is_hidden: boolean;
-  slot:      number;
+  slot: number;
 }
 
 export interface Species {
   name: string;
-  url:  string;
+  url: string;
 }
 
 export interface PokemonDetails {
@@ -37,14 +37,14 @@ export interface PokemonDetails {
   sprites: Sprites;
   abilities?: Array<any>;
   types?: Array<any>;
-  abilitiess:Ability[];
-  
+  moves: Moves[]
+
 }
 
 export interface PokemonEvolution {
-  name : string; 
-  id: number; 
-  results: Results[]; 
+  name: string;
+  id: number;
+  results: Results[];
 
 }
 
@@ -61,11 +61,94 @@ export interface Results {
   id?: string;
   details?: PokemonDetails;
   description?: string;
-  evolution : PokemonEvolution; 
+  evolution: PokemonEvolution;
 }
 
 
-
 export interface Sprites {
+  back_default: string;
+  back_female: string;
+  back_shiny: string;
+  back_shiny_female: string;
   front_default: string;
+  front_female: string;
+  front_shiny: string;
+  front_shiny_female: string;
+}
+
+export interface Evolution {
+  baby_trigger_item: any;
+  chain: Chain;
+  id: number;
+}
+
+export interface Chain {
+  evolution_details: EvolutionDetail[];
+  evolves_to: Chain[];
+  is_baby: boolean;
+  species: Species;
+}
+
+export interface EvolutionDetail {
+  gender: string;
+
+  item: any;
+
+  location: any
+
+  needs_overworld_rain: boolean;
+  party_species: any;
+  party_type: any;
+  relative_physical_stats: any;
+  time_of_day: string;
+}
+
+export interface Species {
+  name: string;
+  url: string;
+}
+
+export interface Ability {
+  effect_changes: any[];
+  effect_entries: EffectEntry[];
+  flavor_text_entries: FlavorTextEntry[];
+  generation: Generation;
+  id: number;
+  is_main_series: boolean;
+  name: string;
+  names: Name[];
+  pokemon: Pokemon[];
+}
+
+export interface EffectEntry {
+  effect: string;
+  language: Generation;
+  short_effect: string;
+}
+
+export interface Generation {
+  name: string;
+  url: string;
+}
+
+export interface FlavorTextEntry {
+  flavor_text: string;
+  language: Generation;
+  version_group: Generation;
+}
+
+export interface Name {
+  language: Generation;
+  name: string;
+}
+
+export interface Pokemon {
+  is_hidden: boolean;
+  pokemon: Generation;
+  slot: number;
+}
+
+export interface Moves {
+  name: string;
+  url: string;
 }

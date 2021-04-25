@@ -1,0 +1,36 @@
+
+
+.name{
+    text-align: auto;
+    margin-left: 200px;
+}
+.bloc_abilities
+{background-color:olivedrab;
+    border: 2px solid black;
+   }
+   .trait{
+    border-bottom: 2px solid #000;
+ 
+   }
+   .images{
+    display: flex;
+  
+   }
+   .pokemonbutton{
+    background-color:#6591c3 ;
+    margin-block-start: auto;
+  }
+  .mat-toolbar {
+    background-color: #6591c3;
+    box-shadow: 0 2px 2px #c51a1a33;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    z-index: 1000; 
+    align-content: space-between;}
+  
+    .logo {
+      margin-left: 60px;
+      height: 60spx;
+      width: 150px;
+    }

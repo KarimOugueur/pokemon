@@ -1,10 +1,12 @@
-import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import {Injectable} from '@angular/core';
-import {env} from 'process';
-import {Observable, throwError} from 'rxjs';
-import {catchError} from 'rxjs/operators';
-import {environment} from 'src/environments/environment';
-import {PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { ɵBrowserGetTestability } from '@angular/platform-browser';
+
+import { env } from 'process';
+import { observable, Observable, throwError } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { environment } from 'src/environments/environment';
+import { Ability, Evolution, Moves, PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -12,8 +14,10 @@ import {PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
 export class PokemonService {
   pokeAPI: any;
   pokeSpeciesAPI: any;
-  pokeEvolution: any;
-  nametopass: string;
+  pokeEvolution:any;
+  nametopass : string;
+  evo : any;
+
 
   constructor(private http: HttpClient) {
     this.pokeAPI = environment.pokemonURL;
@@ -31,15 +35,14 @@ export class PokemonService {
       .get<PokeAPI>(`${this.pokeAPI}?limit=200`)
       .pipe(catchError(this._handleError));
   }
-
-  /**
-   *
-   * @param url
-   * @returns
-   */
-  getData(url: string) {
-    return this.http.get(url);
-  }
+/**
+ *
+ * @param url
+ * @returns
+ */
+  getData(url:string){
+    return this.http.get(url)
+ }
 
   /**
    * Uses pokemon name to retrieve individual pokemon details
@@ -49,17 +52,13 @@ export class PokemonService {
       .get<PokemonDetails>(`${this.pokeAPI}/${name}`)
       .pipe(catchError(this._handleError));
   }
-
-  /**
-   * Retrives information about pokemon
-   * @param id
-   * @returns
-   */
-  getPokemonInfo(id: string): Observable<PokemonDetails> {
-    return this.http
-      .get<PokemonDetails>(this.pokeAPI + '/' + id + '/')
-      .pipe(catchError(this._handleError));
-
+/**
+ * Retrives information about pokemon
+ * @param id
+ * @returns
+ */
+  getPokemonInfo(id:string): Observable<PokemonDetails>{
+    return this.http.get<PokemonDetails>(this.pokeAPI + id + '/');
   }
 
   /**
@@ -71,7 +70,7 @@ export class PokemonService {
       .pipe(catchError(this._handleError));
   }
 
-  getPokemonEvolution(name): Observable<PokemonEvolution> {
+  getPokemonEvolution(name): Observable<PokemonEvolution>{
     return this.http
       .get<PokemonEvolution>(`${this.pokeEvolution}/${name}`)
       .pipe(catchError(this._handleError));
@@ -94,8 +93,22 @@ export class PokemonService {
     // return an observable with a user-facing error message
     return throwError('Something bad happened; please try again later.');
   }
-
-  setname(name: string): void {
+   setname(name : string) : void {
     this.nametopass = name;
   }
-}
+  getPokeEvo(id : any): Observable<Evolution>{
+    return this.http.get<Evolution>("https://pokeapi.co/api/v2/evolution-chain/1").pipe(catchError(this._handleError));}
+
+
+  getAbility(url : string ) : Observable<Ability>{
+      return this.http.get<Ability>(url);
+    }
+    getMoves (name :string) : Observable<Moves[]>{
+      return this.http.get<Moves[]>(`${this.pokeAPI}/${name}`)
+      .pipe(catchError(this._handleError));
+    }
+
+
+
+  }
+

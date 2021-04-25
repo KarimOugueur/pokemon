@@ -10,16 +10,10 @@ export class HomeComponent implements OnInit {
 
   constructor() {
     this.navLinks = [
-<<<<<<< HEAD
-       {
-        label: 'Home',
-        link: 'accueil',
-=======
+
       {
         label: 'Home',
-        link: 'home',
->>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
-        index: 0
+        link: 'accueil',
       },
       {
         label: 'Pokedex',
@@ -29,6 +23,5 @@ export class HomeComponent implements OnInit {
     ];
   }
 
-  ngOnInit() {
-  }
+  ngOnInit(): void {}
 }

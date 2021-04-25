@@ -1,3 +1,50 @@
-<h1>{{ name }}</h1>
-<div><img src="{{getSprites()}}"/></div>
-<a routerLink="/pokedex">Retour à la liste</a>
+<mat-toolbar>
+    <a class="pokemonbutton" routerLink=""><img
+      class="logo"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png"
+    /></a>
+</mat-toolbar>
+
+<div class="poke">
+    <h1 class = "name">{{ name }}</h1>
+    <div class="images">
+       <figure><img src="{{getSprites().front_default}}"
+        alt="front_basic"/>
+        <img src="{{this.getSprites().back_default}}"
+        alt="back_basic"/>
+        <figcaption>basic version</figcaption>
+        </figure>
+        <figure class="shiny">
+        <img src="{{this.getSprites().front_shiny}}"
+        alt="front_shiny">
+        <img src="{{this.getSprites().back_shiny}}"
+        alt="back_shiny">
+        <figcaption>shiny version</figcaption>
+    </figure>
+    </div>
+</div>
+
+<div class="capacities">
+    <button (click)="displayer()">Pokemon capacities</button>
+    <div *ngIf="this.display">
+
+        <ul>
+            <li  *ngFor="let capacity of this.details.moves">
+                <button class="btn btn-success" type="submit" >{{capacity.move.name}}</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<div class="bloc_abilities" *ngIf="this.details.abilities.length>0">
+    <h3 class="trait"> Pokemons Abilities :</h3>
+     <app-ability class = "ability" *ngFor="let ability of this.details.abilities"
+     [name]=ability.ability.name
+     [url]=ability.ability.url
+     ></app-ability>
+</div>
+
+<a routerLink="/pokedex">Retour au pokedex</a>

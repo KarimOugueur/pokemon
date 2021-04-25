@@ -5,6 +5,7 @@ export const environment = {
   pokemonURL: 'https://pokeapi.co/api/v2/pokemon',
   pokemonSpeciesURL: 'https://pokeapi.co/api/v2/pokemon-species',
   pokemonEvolutionURl:'https://pokeapi.co/api/v2/evolution-trigger',
-  PokemonaccueilURL : 'https://pokeapi.co/api/v2/pokemon/growlithe/'
+  PokemonaccueilURL : 'https://pokeapi.co/api/v2/pokemon/growlithe/',
+  PokemonEvolution : 'https://pokeapi.co/api/v2/evolution-chain/',
 };
 

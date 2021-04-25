@@ -89,7 +89,7 @@ s
 
         // when last pokemon details have been loaded
         // send pokemons to header component
-        if (pokemon.id === '200') {
+        if (pokemon.id === '100') {
           this.pokemonsLoaded = true;
           this.exportPokemons.emit(this.pokemons.results);
         }
