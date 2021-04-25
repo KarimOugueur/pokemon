@@ -11,6 +11,10 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 
 export class AppComponent {
+<<<<<<< HEAD
   constructor() {}
 
+=======
+  constructor() { }
+>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
 }

@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { Results } from 'src/interfaces';
+import {Component, EventEmitter, Input, Output, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {Results} from 'src/interfaces';
 
 
 @Component({
@@ -10,6 +10,7 @@ import { Results } from 'src/interfaces';
 })
 export class PokemonHeaderComponent implements OnInit {
   [x: string]: any;
+
   @Output() searchChange = new EventEmitter();
   @Output() typeSelected = new EventEmitter();
   @Output() abilitiesSelected = new EventEmitter();
@@ -33,7 +34,8 @@ export class PokemonHeaderComponent implements OnInit {
     }
   }
 
-  constructor(private router : Router) {}
+  constructor(private router: Router) {
+  }
 
   ngOnInit(): void {
     this.abilities = [];
@@ -88,13 +90,6 @@ export class PokemonHeaderComponent implements OnInit {
     }
   }
 
-  goToVotes($myParam: string = ''): void {
-    const navigationDetails: string[] = ['/votes'];
-    if($myParam.length) {
-      navigationDetails.push($myParam);
-    }
-    this.router.navigate(navigationDetails);
-  }
 
   /**
    * Grabs a pokemons types and adds to array
@@ -111,7 +106,7 @@ export class PokemonHeaderComponent implements OnInit {
     }
   }
 
-  btnClick(pages):void {
+  btnClick(pages): void {
     this.router.navigateByUrl(pages);
     console.log(pages);
   }

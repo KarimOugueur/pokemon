@@ -61,6 +61,7 @@
   }
 }
 .headerButton {
+<<<<<<< HEAD
   margin-left: +2px;
   background-color: #cf2a2a;
   display: inline-block;
@@ -72,6 +73,12 @@
   outline: none;
   color: rgb(12, 5, 5);
   border-radius: 15px;
+=======
+  color: currentColor;
+  padding: 08px;
+  background-color: #cf2a2a;
+  margin-left: 83px;
+>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
 }
 
 @media only screen and (max-width: 500px) {
