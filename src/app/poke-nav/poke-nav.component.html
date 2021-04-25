@@ -9,8 +9,7 @@
 <div class="poke">
     <h1 class = "name">{{ name }}</h1>
     <div class="images">
-        
-        <figure><img src="{{getSprites().front_default}}"
+       <figure><img src="{{getSprites().front_default}}"
         alt="front_basic"/>
         <img src="{{this.getSprites().back_default}}"
         alt="back_basic"/>
@@ -25,14 +24,28 @@
     </figure>
     </div>
 </div>
+
+<div class="capacities">
+    <button (click)="displayer()">Pokemon capacities</button>
+    <div *ngIf="this.display">
+
+        <ul>
+            <li  *ngFor="let capacity of this.details.moves">
+                <button class="btn btn-success" type="submit" >{{capacity.move.name}}</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+
 <div class="bloc_abilities" *ngIf="this.details.abilities.length>0">
     <h3 class="trait"> Pokemons Abilities :</h3>
-
      <app-ability class = "ability" *ngFor="let ability of this.details.abilities"
      [name]=ability.ability.name
      [url]=ability.ability.url
      ></app-ability>
-   
- </div>
+</div>
 
 <a routerLink="/pokedex">Retour au pokedex</a>

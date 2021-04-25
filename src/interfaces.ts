@@ -37,6 +37,7 @@ export interface PokemonDetails {
   sprites: Sprites;
   abilities?: Array<any>;
   types?: Array<any>;
+  moves : Moves[]
   
 }
 
@@ -145,4 +146,8 @@ export interface Pokemon {
   is_hidden: boolean;
   pokemon:   Generation;
   slot:      number;
+}
+export interface Moves {
+  name : string;
+  url : string;
 }

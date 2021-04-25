@@ -1,11 +1,12 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ɵBrowserGetTestability } from '@angular/platform-browser';
+import { url } from 'inspector';
 import { env } from 'process';
 import { observable, Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { Ability, Evolution, PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
+import { Ability, Evolution, Moves, PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -102,6 +103,11 @@ export class PokemonService {
   getAbility(url : string ) : Observable<Ability>{
       return this.http.get<Ability>(url);
     }
+    getMoves (name :string) : Observable<Moves[]>{
+      return this.http.get<Moves[]>(`${this.pokeAPI}/${name}`)
+      .pipe(catchError(this._handleError));
+    }
+
   
 
   }
