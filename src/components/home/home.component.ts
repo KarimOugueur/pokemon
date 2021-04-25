@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
   constructor() {
     this.navLinks = [
        {
-        label: 'Accueil',
+        label: 'Home',
         link: 'accueil',
         index: 0
       },

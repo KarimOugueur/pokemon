@@ -19,12 +19,11 @@ import { PokeInfoComponent } from 'src/app/poke-info/poke-info.component'
 import { RouterModule, Routes } from '@angular/router';
 import { PokeNavComponent } from './poke-nav/poke-nav.component';
 
-
-
 const appRoutes: Routes = [
   { path: 'pokemon/:id', component:PokeNavComponent },
   { path: '', component: PokemonAccueilComponent },
-  {path : 'pokedex', component : PokemonPookdexComponent}
+  {path : 'pokedex', component : PokemonPookdexComponent},
+  { path: 'accueil', component: PokemonAccueilComponent },
 ];
 
 @NgModule({

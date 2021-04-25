@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { PokemonService } from 'src/services/pokemon.service';
 import { Results } from './../interfaces';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -10,5 +11,6 @@ import { Results } from './../interfaces';
 })
 
 export class AppComponent {
-  constructor(){}
+  constructor() {}
+
 }

@@ -4,6 +4,13 @@
     Nicolas Demongeot 
 
 
+
+## test 
+git clone 
+npm update 
+npm install --save-dev @angular-devkit/build-angular
+
+
 # AngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.6.3.
