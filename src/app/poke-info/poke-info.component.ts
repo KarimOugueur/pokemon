@@ -24,4 +24,6 @@ export class PokeInfoComponent implements OnInit {
     console.log(service.nametopass);
   }
 
+  
+
 }

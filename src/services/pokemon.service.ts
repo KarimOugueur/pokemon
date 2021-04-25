@@ -1,10 +1,11 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ɵBrowserGetTestability } from '@angular/platform-browser';
 import { env } from 'process';
-import { Observable, throwError } from 'rxjs';
+import { observable, Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
+import { Ability, Evolution, PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
 
 @Injectable({
   providedIn: 'root'
@@ -14,12 +15,14 @@ export class PokemonService {
   pokeSpeciesAPI: any;
   pokeEvolution:any;
   nametopass : string;
+  evo : any;
+
  
   constructor(private http: HttpClient) {
     this.pokeAPI = environment.pokemonURL;
     this.pokeSpeciesAPI = environment.pokemonSpeciesURL;
     this.pokeEvolution = environment.pokemonEvolutionURl; 
-   
+    
   }
 
   /**
@@ -28,7 +31,7 @@ export class PokemonService {
    */
   getPokemon(): Observable<PokeAPI> {
     return this.http
-      .get<PokeAPI>(`${this.pokeAPI}?limit=200`)
+      .get<PokeAPI>(`${this.pokeAPI}?limit=151`)
       .pipe(catchError(this._handleError));
   }
 /**
@@ -92,4 +95,14 @@ export class PokemonService {
    setname(name : string) : void {
     this.nametopass = name;
   }
-}
+  getPokeEvo(id : any): Observable<Evolution>{
+    return this.http.get<Evolution>("https://pokeapi.co/api/v2/evolution-chain/1").pipe(catchError(this._handleError));}
+ 
+
+  getAbility(url : string ) : Observable<Ability>{
+      return this.http.get<Ability>(url);
+    }
+  
+
+  }
+ 

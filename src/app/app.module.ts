@@ -18,6 +18,7 @@ import {PokemonPookdexComponent } from 'src/components/pokemon-pookdex/pokemon-p
 import { PokeInfoComponent } from 'src/app/poke-info/poke-info.component'
 import { RouterModule, Routes } from '@angular/router';
 import { PokeNavComponent } from './poke-nav/poke-nav.component';
+import { AbilityComponent } from './ability/ability.component';
 
 
 
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
     TypeFilterPipe,
     AbilitiesFilterPipe,
     PokeInfoComponent,
-    PokeNavComponent
+    PokeNavComponent,
+    AbilityComponent
     
   ],
   imports: [

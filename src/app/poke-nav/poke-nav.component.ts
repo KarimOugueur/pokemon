@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { PokemonDetails } from 'src/interfaces';
+import { Ability, Evolution, PokemonDetails, PokemonEvolution, Sprites } from 'src/interfaces';
 import {PokemonService} from 'src/services/pokemon.service'
 
 @Component({
@@ -11,18 +11,38 @@ import {PokemonService} from 'src/services/pokemon.service'
 export class PokeNavComponent implements OnInit {
 
   name : string;
-  data : PokemonDetails ;
+  details : PokemonDetails ;
+  evolution : PokemonEvolution;
+  pokemon : any;
+  currentAbility : any;
+  Abilities : any[];
   constructor(private pokeService : PokemonService,private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.name = this.route.snapshot.params['id'];
-    this.pokeService.getPokemonDetails(this.name).subscribe((data)=> {this.data =data;  console.log(data);});  
-  
-  }
-  private getSprites(): string{
- return this.data.sprites.front_default;
-  
+    this.pokeService.getPokemonDetails(this.name).subscribe((data)=> {this.pokemon =data; this.details=data; console.log(data);});  
     
+  }
+  private getSprites(): Sprites{
+    return this.details.sprites;
+    
+    
+  }
+  private getEvolve()  : string {
+  //  this.pokeService.getPokemonEvolution(this.name).subscribe((evo)=>{console.log(evo.results)});
+
+    console.log(this.evolution.id);
+  return "ok";
+  }
+  private getAbilities() : string{
+
+    return this.details.abilities[0].ability.name;
+  }
+  private getAbilityUrl() : string
+  {  return this.details.abilities[0].ability.url;}
+  private getAbilityDescription(url : string) {
+    this.pokeService.getAbility(url).subscribe((ability)=>this.currentAbility=ability);
+    return this.currentAbility.effect_entries[0].effect;
   }
 
 }

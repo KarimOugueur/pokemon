@@ -1,3 +1,8 @@
+
+.pokemonbutton{
+  background-color:#6591c3 ;
+  margin-block-start: auto;
+}
 .mat-toolbar {
   background-color: #6591c3;
   box-shadow: 0 2px 2px #c51a1a33;
@@ -5,6 +10,7 @@
   position: -webkit-sticky; 
   top: 0;
   z-index: 1000; 
+  align-content: space-between;
 
   .logo {
     margin-left: 60px;
