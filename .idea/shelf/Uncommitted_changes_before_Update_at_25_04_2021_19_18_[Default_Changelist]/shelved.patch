@@ -1,0 +1,1417 @@
+Index: src/components/home/home.component.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.mat-toolbar {\n  background-color: #cf2a2a;\n  box-shadow: 0 2px 2px rgba(240, 237, 237, 0.2);\n  position: sticky;\n  position: -webkit-sticky;\n  top: 0;\n  z-index: 1000;\n\n  .logo {\n    margin-left: 50px;\n    height: 60px;\n    width: 150px;\n  }\n\n  .mat-icon-button,\n  .mat-icon {\n    height: 35px;\n    width: 35px;\n    line-height: 35px;\n  }\n\n  .search-box {\n    margin-right: 10px;\n    .search-input {\n      font-size: 16px;\n      font-weight: bold;\n      margin-left: 50px;\n      padding: 2px 5px 2px 20px;\n      width: 270px;\n      border-radius: 50px;\n      border: none;\n      outline: none !important;\n      background: rgb(246, 245, 245);\n    }\n    .close-button {\n      margin-left: -35px;\n    }\n   \n  }\n  .button-link {\n    margin-left: -1px;\n    background-color: #cf2a2a;\n    display: inline-block;\n    padding: 15px 25px;\n    font-size: 24px;\n    cursor: pointer;\n    text-align: center;\n    text-decoration: none;\n    outline: none;\n    color: #fff;\n\n    border-radius: 15px;\n\n  }\n\n\n  .mat-select {\n    text-transform: capitalize;\n\n    .additional-selection {\n      text-transform: lowercase;\n      opacity: 0.75;\n      font-size: 0.75em;\n    }\n  }\n  .filter-component {\n    margin-left: 80px;\n    .filter {\n      margin-right: 10px;\n    }\n\n    .form-field {\n      width: auto;\n      margin-top: 8px;\n    }\n  }\n}\n/* label style */\n.mat-tab-link{\n  line-height: 30px !important;\n  height: 30px !important;\n  min-width: 100px !important;\n  border: 1px solid #7e7e7e;\n}\n\n/* Styles for the ink bar */\n.mat-tab-nav-bar.mat-primary .mat-ink-bar{\n  background: #e06a0a;\n  border: 1px solid #aaaaaa;\n  background: #ffffff 50% 50% repeat-x;\n}\n\n\n\n/* Styles for the ink bar */\n.mat-ink-bar {\n  background-color: rgb(15, 182, 15);\n}\n\n@media only screen and (max-width: 500px) {\n  .mat-toolbar {\n    display: table;\n    padding: 20px;\n    text-align: center;\n  }\n\n  .pokemon-logo {\n    display: none;\n  }\n\n  .search-input,\n  .search-box,\n  .filter-component {\n    margin: 5px 0px !important;\n  }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/home/home.component.scss b/src/components/home/home.component.scss
+--- a/src/components/home/home.component.scss	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/home/home.component.scss	(date 1619370463427)
+@@ -1,5 +1,9 @@
+ .mat-toolbar {
++<<<<<<< HEAD
+   background-color: #cf2a2a;
++=======
++  background-color: #5e85b3;
++>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
+   box-shadow: 0 2px 2px rgba(240, 237, 237, 0.2);
+   position: sticky;
+   position: -webkit-sticky;
+@@ -35,6 +39,7 @@
+     .close-button {
+       margin-left: -35px;
+     }
++<<<<<<< HEAD
+    
+   }
+   .button-link {
+@@ -53,6 +58,9 @@
+ 
+   }
+ 
++=======
++  }
++>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
+ 
+   .mat-select {
+     text-transform: capitalize;
+Index: src/components/pokemon-header/pokemon-header.component.scss
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.mat-toolbar {\n  background-color: #cf2a2a;\n  box-shadow: 0 2px 2px #9c797933;\n  position: sticky;\n  position: -webkit-sticky;\n  top: 0;\n  z-index: 1000;\n\n  .logo {\n    margin-left: 60px;\n    height: 60px;\n    width: 150px;\n  }\n\n  .mat-icon-button,\n  .mat-icon {\n    height: 40px;\n    width: 40px;\n    line-height: 40px;\n  }\n\n  .search-box {\n    margin-right: 10px;\n    .search-input {\n      font-size: 16px;\n      font-weight: bold;\n      margin-left: 50px;\n      padding: 2px 5px 2px 20px;\n      width: 270px;\n      border-radius: 50px;\n      border: none;\n      outline: none !important;\n      background: rgb(246, 245, 245);\n    }\n    .close-button {\n      margin-left: -35px;\n    }\n  }\n\n  .mat-select {\n    text-transform: capitalize;\n\n    .additional-selection {\n      text-transform: lowercase;\n      opacity: 0.85;\n      font-size: 0.85em;\n    }\n  }\n\n\n  .filter-component {\n    margin-left: 83px;\n    .filter {\n      margin-right: 12px;\n    }\n\n    .form-field {\n      width: auto;\n      margin-top: 10px;\n    }\n  }\n}\n.headerButton {\n  margin-left: +2px;\n  background-color: #cf2a2a;\n  display: inline-block;\n  padding: 15px 25px;\n  font-size: 24px;\n  cursor: pointer;\n  text-align: center;\n  text-decoration: none;\n  outline: none;\n  color: rgb(12, 5, 5);\n  border-radius: 15px;\n}\n\n@media only screen and (max-width: 500px) {\n.mat-toolbar {\n  display: table;\n  padding: 20px;\n  text-align: center;\n  }\n\n  .pokemon-logo {\n    display: none;\n  }\n\n  .search-input,\n  .search-box,\n  .filter-component {\n    margin: 5px 0px !important;\n  }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-header/pokemon-header.component.scss b/src/components/pokemon-header/pokemon-header.component.scss
+--- a/src/components/pokemon-header/pokemon-header.component.scss	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/pokemon-header/pokemon-header.component.scss	(date 1619370463379)
+@@ -61,6 +61,7 @@
+   }
+ }
+ .headerButton {
++<<<<<<< HEAD
+   margin-left: +2px;
+   background-color: #cf2a2a;
+   display: inline-block;
+@@ -72,6 +73,12 @@
+   outline: none;
+   color: rgb(12, 5, 5);
+   border-radius: 15px;
++=======
++  color: currentColor;
++  padding: 08px;
++  background-color: #cf2a2a;
++  margin-left: 83px;
++>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
+ }
+ 
+ @media only screen and (max-width: 500px) {
+Index: src/components/home/home.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><mat-toolbar>\n  <img\n    class=\"logo\"\n    src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png\"\n  />\n \n  <div class=\"button-link\">\n    <nav mat-tab-nav-bar>\n      <a mat-tab-link\n         *ngFor=\"let link of navLinks\"\n         [routerLink]=\"link.link\"\n         routerLinkActive #rla=\"routerLinkActive\"\n         [active]=\"rla.isActive\">\n        {{link.label}}\n      </a>\n    </nav>\n  </div>\n</mat-toolbar>\n\n<app-pokemon-accueil></app-pokemon-accueil>\n\n  \n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/home/home.component.html b/src/components/home/home.component.html
+--- a/src/components/home/home.component.html	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/home/home.component.html	(date 1619370463427)
+@@ -3,7 +3,11 @@
+     class="logo"
+     src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png"
+   />
++<<<<<<< HEAD
+  
++=======
++
++>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
+   <div class="button-link">
+     <nav mat-tab-nav-bar>
+       <a mat-tab-link
+@@ -15,8 +19,10 @@
+       </a>
+     </nav>
+   </div>
++<<<<<<< HEAD
++=======
++
++>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
+ </mat-toolbar>
+ 
+ <app-pokemon-accueil></app-pokemon-accueil>
+-
+-  
+Index: src/components/home/home.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-home',\n  templateUrl: './home.component.html',\n  styleUrls: ['./home.component.scss']\n})\nexport class HomeComponent implements OnInit {\n  \n  navLinks: any[];\n\n  constructor() {\n    this.navLinks = [\n       {\n        label: 'Home',\n        link: 'accueil',\n        index: 0\n      },\n      {\n        label: 'Pokedex',\n        link: 'pokedex',\n        index: 1\n      }\n    ];\n  }\n\n  ngOnInit() { }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/home/home.component.ts b/src/components/home/home.component.ts
+--- a/src/components/home/home.component.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/home/home.component.ts	(date 1619370463427)
+@@ -1,4 +1,4 @@
+-import { Component, OnInit } from '@angular/core';
++import {Component, OnInit} from '@angular/core';
+ 
+ @Component({
+   selector: 'app-home',
+@@ -6,14 +6,19 @@
+   styleUrls: ['./home.component.scss']
+ })
+ export class HomeComponent implements OnInit {
+-  
+   navLinks: any[];
+ 
+   constructor() {
+     this.navLinks = [
++<<<<<<< HEAD
+        {
+         label: 'Home',
+         link: 'accueil',
++=======
++      {
++        label: 'Home',
++        link: 'home',
++>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
+         index: 0
+       },
+       {
+@@ -24,5 +29,6 @@
+     ];
+   }
+ 
+-  ngOnInit() { }
++  ngOnInit() {
++  }
+ }
+Index: src/app/app.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { Component } from '@angular/core';\nimport { PokemonService } from 'src/services/pokemon.service';\nimport { Results } from './../interfaces';\nimport { Router, ActivatedRoute, ParamMap } from '@angular/router';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss'],\n\n})\n\nexport class AppComponent {\n  constructor() {}\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/app/app.component.ts b/src/app/app.component.ts
+--- a/src/app/app.component.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/app/app.component.ts	(date 1619370463431)
+@@ -11,6 +11,10 @@
+ })
+ 
+ export class AppComponent {
++<<<<<<< HEAD
+   constructor() {}
+ 
++=======
++  constructor() { }
++>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
+ }
+Index: src/app/app-routing.module.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\nimport { NgModule } from '@angular/core';\nimport { Routes, RouterModule } from '@angular/router';\nimport { HomeComponent } from 'src/components/home/home.component';\nimport { PokemonAccueilComponent } from 'src/components/pokemon-accueil/pokemon-accueil.component';\nimport { PokemonHeaderComponent } from 'src/components/pokemon-header/pokemon-header.component';\nimport { PokemonPookdexComponent } from 'src/components/pokemon-pookdex/pokemon-pookdex.component';\nimport { PokeNavComponent } from './poke-nav/poke-nav.component';\n\nconst routes: Routes = [\n  { path: 'pokemon/:id', component:PokeNavComponent },\n  { path: '', component: HomeComponent },\n  {path : 'pokedex', component : PokemonPookdexComponent},\n  { path: 'accueil', redirectTo : '/home', pathMatch: 'full'  },\n];\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/app/app-routing.module.ts b/src/app/app-routing.module.ts
+--- a/src/app/app-routing.module.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/app/app-routing.module.ts	(date 1619370463431)
+@@ -1,3 +1,4 @@
++<<<<<<< HEAD
+ 
+ import { NgModule } from '@angular/core';
+ import { Routes, RouterModule } from '@angular/router';
+@@ -12,9 +13,34 @@
+   { path: '', component: HomeComponent },
+   {path : 'pokedex', component : PokemonPookdexComponent},
+   { path: 'accueil', redirectTo : '/home', pathMatch: 'full'  },
++=======
++import {NgModule} from '@angular/core';
++import {Routes, RouterModule} from '@angular/router';
++import {HomeComponent} from 'src/components/home/home.component';
++import {PokemonAccueilComponent} from 'src/components/pokemon-accueil/pokemon-accueil.component';
++import {PokemonHeaderComponent} from 'src/components/pokemon-header/pokemon-header.component';
++import {PokemonPookdexComponent} from 'src/components/pokemon-pookdex/pokemon-pookdex.component';
++
++const routes: Routes = [
++
++  {
++    path: 'home',
++    component: HomeComponent
++  },
++  {
++    path: 'accueil',
++    redirectTo: 'home',
++    pathMatch: 'full'
++  },
++  {
++    path: 'pokedex',
++    component: PokemonPookdexComponent
++  }
++>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
+ ];
+ @NgModule({
+   imports: [RouterModule.forRoot(routes)],
+   exports: [RouterModule]
+ })
+-export class AppRoutingModule { }
++export class AppRoutingModule {
++}
+Index: src/components/pokemon-accueil/pokemon-accueil.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div style=\"text-align:center\">\n  \n <h1> Welcome from {{this.getName()}}</h1>\n\n<img width=\"400\" alt=\"Pokemon sprite\" src={{pokemon.sprites.front_default}}>\n\n    <div class=\"search-pok\"> \n      <input\n        matInput\n        class=\"search-input\"\n        type=\"text\"\n        placeholder=\"Enter Pokemon name or id...\"\n        name=\"pokemonName\" #pokemonName> \n        \n      <button class=\"search-button\" type=\"button\" (click)=\"clickme(pokemonName.value)\">Select\n\n      </button>\n    </div>\n<div *ngIf=\"this.bool\"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->\n    <app-poke-info [Name]=Name></app-poke-info>\n    <app-poke-nav></app-poke-nav>\n    </div>\n      \n  </div>\n\n 
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-accueil/pokemon-accueil.component.html b/src/components/pokemon-accueil/pokemon-accueil.component.html
+--- a/src/components/pokemon-accueil/pokemon-accueil.component.html	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/pokemon-accueil/pokemon-accueil.component.html	(date 1619370463367)
+@@ -1,26 +1,25 @@
+ <div style="text-align:center">
+-  
+- <h1> Welcome from {{this.getName()}}</h1>
++
++  <h1> Welcome from {{this.getName()}}</h1>
+ 
+-<img width="400" alt="Pokemon sprite" src={{pokemon.sprites.front_default}}>
++  <img width="400" alt="Pokemon sprite" src={{pokemon.sprites.front_default}}>
+ 
+-    <div class="search-pok"> 
+-      <input
+-        matInput
+-        class="search-input"
+-        type="text"
+-        placeholder="Enter Pokemon name or id..."
+-        name="pokemonName" #pokemonName> 
+-        
+-      <button class="search-button" type="button" (click)="clickme(pokemonName.value)">Select
++  <div class="search-pok">
++    <input
++      matInput
++      class="search-input"
++      type="text"
++      placeholder="Enter Pokemon name or id..."
++      name="pokemonName" #pokemonName>
++
++    <button class="search-button" type="button" (click)="clickme(pokemonName.value)">Select
+ 
+-      </button>
+-    </div>
+-<div *ngIf="this.bool"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->
++    </button>
++  </div>
++  <div *ngIf="this.bool"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->
+     <app-poke-info [Name]=Name></app-poke-info>
+     <app-poke-nav></app-poke-nav>
+-    </div>
+-      
+-  </div>
++  </div>
++
++</div>
+ 
+- 
+\ No newline at end of file
+Index: src/components/pokemon-header/pokemon-header.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><mat-toolbar>\n  <img\n    class=\"logo\"\n    src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png\"\n  />\n  <div class=\"search-box\">\n    <input\n      matInput\n      class=\"search-input\"\n      type=\"text\"\n      [(ngModel)]=\"search\"\n      (ngModelChange)=\"searchEvent()\"\n      placeholder=\"Enter Pokemon name or id...\"\n    />\n    <button\n      mat-button\n      class=\"close-button\"\n      *ngIf=\"search\"\n      matSuffix\n      mat-icon-button\n      aria-label=\"Clear\"\n      (click)=\"searchEvent('')\"\n    >\n      <mat-icon>close</mat-icon>\n    </button>\n  </div>\n\n  <div class=\"filter-component\">\n    <mat-label class=\"filter\">Filter by Abilities</mat-label>\n    <mat-form-field class=\"form-field\">\n      <mat-select [(ngModel)]=\"currentAbilities\" (ngModelChange)=\"onAbilitySelected()\" multiple>\n          <mat-select-trigger>\n              {{currentAbilities ? currentAbilities[0]: ''}}\n              <span *ngIf=\"currentAbilities?.length > 1\" class=\"additional-selection\">\n                (+{{currentAbilities.length - 1}} {{currentAbilities?.length === 2 ? 'other' : 'others'}})\n              </span>\n            </mat-select-trigger>\n        <mat-option *ngFor=\"let ability of abilities\" [value]=\"ability\">\n          {{ ability | titlecase }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n\n <div class=\"filter-component\">\n    <mat-label class=\"filter\">Filter by Type</mat-label>\n    <mat-form-field class=\"form-field\">\n      <mat-select [(ngModel)]=\"currentType\" (ngModelChange)=\"onTypeSelected()\">\n        <mat-option>None</mat-option>\n        <mat-option *ngFor=\"let type of types\" [value]=\"type\">\n          {{ type | titlecase }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n\n  <button class=\"headerButton\" (click)=\"btnClick('')\"> Home</button>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-header/pokemon-header.component.html b/src/components/pokemon-header/pokemon-header.component.html
+--- a/src/components/pokemon-header/pokemon-header.component.html	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/pokemon-header/pokemon-header.component.html	(date 1619370463423)
+@@ -54,4 +54,8 @@
+     </mat-form-field>
+   </div>
+ 
+-  <button class="headerButton" (click)="btnClick('')"> Home</button>
+\ No newline at end of file
++<<<<<<< HEAD
++  <button class="headerButton" (click)="btnClick('')"> Home</button>
++=======
++  <button class="headerButton" (click)="btnClick('')"> Home</button>
++>>>>>>> 9896e2c2357dc1bd2e43b1d1c99998c6f8e98a5e
+Index: src/services/pokemon-service-info-pokemon.service.spec.ts
+===================================================================
+diff --git a/src/services/pokemon-service-info-pokemon.service.spec.ts b/src/services/pokemon-service-info-pokemon.service.spec.ts
+deleted file mode 100644
+--- a/src/services/pokemon-service-info-pokemon.service.spec.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ /dev/null	(revision 123c72204887884b43fb7209ced9b343093d2dde)
+@@ -1,12 +0,0 @@
+-import { TestBed } from '@angular/core/testing';
+-
+-import { PokemonServiceInfoPokemonService } from './pokemon-service-info-pokemon.service';
+-
+-describe('PokemonServiceInfoPokemonService', () => {
+-  beforeEach(() => TestBed.configureTestingModule({}));
+-
+-  it('should be created', () => {
+-    const service: PokemonServiceInfoPokemonService = TestBed.get(PokemonServiceInfoPokemonService);
+-    expect(service).toBeTruthy();
+-  });
+-});
+Index: src/components/pokemon-filter-type/pokemon-filter-type.component.ts
+===================================================================
+diff --git a/src/components/pokemon-filter-type/pokemon-filter-type.component.ts b/src/components/pokemon-filter-type/pokemon-filter-type.component.ts
+deleted file mode 100644
+--- a/src/components/pokemon-filter-type/pokemon-filter-type.component.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ /dev/null	(revision 123c72204887884b43fb7209ced9b343093d2dde)
+@@ -1,22 +0,0 @@
+-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+-import { PokeAPI, PokemonDetails, Results, TYPE_COLOURS } from 'src/interfaces';
+-import { PokemonService } from 'src/services/pokemon.service';
+-import { PokemonServiceInfoPokemonService } from 'src/services/pokemon-service-info-pokemon.service'
+-@Component({
+-  selector: 'app-pokemon-filter-type',
+-  templateUrl: './pokemon-filter-type.component.html',
+-  styleUrls: ['./pokemon-filter-type.component.scss']
+-})
+-export class PokemonFilterTypeComponent implements OnInit {
+-  @Input('detail')
+-  detail!: PokemonDetails;
+-
+-  constructor(private pokemonServiceInfoService:PokemonServiceInfoPokemonService) {
+-    this.pokemonServiceInfoService.getObservable().subscribe(e => console.log('e ' +e));
+-  }
+-
+-  ngOnInit(): void {
+-
+-  }
+-
+-}
+Index: src/components/pokemon-filter-type/pokemon-filter-type.component.spec.ts
+===================================================================
+diff --git a/src/components/pokemon-filter-type/pokemon-filter-type.component.spec.ts b/src/components/pokemon-filter-type/pokemon-filter-type.component.spec.ts
+deleted file mode 100644
+--- a/src/components/pokemon-filter-type/pokemon-filter-type.component.spec.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ /dev/null	(revision 123c72204887884b43fb7209ced9b343093d2dde)
+@@ -1,25 +0,0 @@
+-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+-
+-import { PokemonFilterTypeComponent } from './pokemon-filter-type.component';
+-
+-describe('PokemonFilterTypeComponent', () => {
+-  let component: PokemonFilterTypeComponent;
+-  let fixture: ComponentFixture<PokemonFilterTypeComponent>;
+-
+-  beforeEach(async(() => {
+-    TestBed.configureTestingModule({
+-      declarations: [ PokemonFilterTypeComponent ]
+-    })
+-    .compileComponents();
+-  }));
+-
+-  beforeEach(() => {
+-    fixture = TestBed.createComponent(PokemonFilterTypeComponent);
+-    component = fixture.componentInstance;
+-    fixture.detectChanges();
+-  });
+-
+-  it('should create', () => {
+-    expect(component).toBeTruthy();
+-  });
+-});
+Index: src/components/pokemon-filter-type/pokemon-filter-type.component.html
+===================================================================
+diff --git a/src/components/pokemon-filter-type/pokemon-filter-type.component.html b/src/components/pokemon-filter-type/pokemon-filter-type.component.html
+deleted file mode 100644
+--- a/src/components/pokemon-filter-type/pokemon-filter-type.component.html	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ /dev/null	(revision 123c72204887884b43fb7209ced9b343093d2dde)
+@@ -1,4 +0,0 @@
+-Pokemon Selected is :  {{detail.name}}
+-<ul>
+-  <li *ngFor = "let ability of detail.abilities"> {{ability.ability.name}} </li>
+-</ul>
+Index: src/services/pokemon-service-info-pokemon.service.ts
+===================================================================
+diff --git a/src/services/pokemon-service-info-pokemon.service.ts b/src/services/pokemon-service-info-pokemon.service.ts
+deleted file mode 100644
+--- a/src/services/pokemon-service-info-pokemon.service.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ /dev/null	(revision 123c72204887884b43fb7209ced9b343093d2dde)
+@@ -1,28 +0,0 @@
+-import { Injectable } from '@angular/core';
+-import { Subject } from 'rxjs';
+-
+-@Injectable({
+-  providedIn: 'root'
+-})
+-export class PokemonServiceInfoPokemonService {
+-  public subjectObeservable= new  Subject<string>();
+-
+-  constructor() { }
+-
+-
+-/***
+- * Recopier du tp1
+- * créer un sujet d'observable (subjectObeservable)
+- * créer un observable pour et récupérer le sujet (getObservable)
+- * mettre a jour la valuer du sujet
+- */
+-
+-  setVelue(v:string){
+-    this.subjectObeservable.next(v);
+-  }
+-
+-  getObservable():Subject<string> {
+-    return this.subjectObeservable;
+-  }
+-
+-}
+Index: src/components/pokemon-filter-type/pokemon-filter-type.component.scss
+===================================================================
+diff --git a/src/components/pokemon-filter-type/pokemon-filter-type.component.scss b/src/components/pokemon-filter-type/pokemon-filter-type.component.scss
+deleted file mode 100644
+--- a/src/components/pokemon-filter-type/pokemon-filter-type.component.scss	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ /dev/null	(revision 123c72204887884b43fb7209ced9b343093d2dde)
+@@ -1,87 +0,0 @@
+-.mat-toolbar {
+-  background-color: #d36f6f;
+-  box-shadow: 0 2px 2px rgba(197, 26, 26, 0.2);
+-  position: sticky;
+-  position: -webkit-sticky; 
+-  top: 0;
+-  z-index: 1000; 
+-
+-  .pokemon-logo {
+-    margin-left: 50px;
+-    height: 50px;
+-    width: 150px;
+-  }
+-  .pokemon-logo {
+-    margin-right: 50px;
+-    height: 50px;
+-    width: 150px;
+-  }
+-
+-
+-  .mat-icon-button,
+-  .mat-icon {
+-    height: 35px;
+-    width: 35px;
+-    line-height: 35px;
+-  }
+-
+-  .search-box {
+-    margin-right: 10px;
+-    .search-input {
+-      font-size: 16px;
+-      font-weight: bold;
+-      margin-left: 50px;
+-      padding: 2px 5px 2px 20px;
+-      width: 270px;
+-      border-radius: 50px;
+-      border: none;
+-      outline: none !important;
+-      background: rgb(246, 245, 245);
+-    }
+-    .close-button {
+-      margin-left: -35px;
+-    }
+-  }
+-
+-  .mat-select {
+-    text-transform: capitalize;
+-
+-    .additional-selection {
+-      text-transform: lowercase;
+-      opacity: 0.75;
+-      font-size: 0.75em;
+-    }
+-  }
+-
+-
+-  .filter-component {
+-    margin-left: 80px;
+-    .filter {
+-      margin-right: 10px;
+-    }
+-    
+-    .form-field {
+-      width: auto;
+-      margin-top: 8px;
+-    }
+-  }
+-}
+-
+-@media only screen and (max-width: 500px) {
+-.mat-toolbar {
+-  display: table;
+-  padding: 20px;
+-  text-align: center;
+-  }
+-
+-  .pokemon-logo {
+-    display: none;
+-  }
+-
+-  .search-input,
+-  .search-box,
+-  .filter-component {
+-    margin: 5px 0px !important;
+-  }
+-
+-}
+Index: src/components/pokemon-header/pokemon-header.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';\nimport { Router } from '@angular/router';\nimport { Results } from 'src/interfaces';\n\n\n@Component({\n  selector: 'app-pokemon-header',\n  templateUrl: './pokemon-header.component.html',\n  styleUrls: ['./pokemon-header.component.scss']\n})\nexport class PokemonHeaderComponent implements OnInit {\n  [x: string]: any;\n  @Output() searchChange = new EventEmitter();\n  @Output() typeSelected = new EventEmitter();\n  @Output() abilitiesSelected = new EventEmitter();\n\n  abilities: Array<string>;\n  types: Array<string>;\n  pokemonList: Array<Results>;\n  search: string;\n  currentType: string;\n  currentAbilities: Array<string>;\n\n  @Input() set pokemons(pokemons: Results[]) {\n    if (pokemons !== this.pokemonList) {\n      this.pokemonList = pokemons;\n\n      // Get types and abilities from each pokemon\n      this.pokemonList.forEach(pokemon => {\n        this.setPokemonAbilities(pokemon);\n        this.setPokemonTypes(pokemon);\n      });\n    }\n  }\n\n  constructor(private router : Router) {}\n\n  ngOnInit(): void {\n    this.abilities = [];\n    this.types = [];\n  }\n\n  /**\n   * Called when a search field is updated\n   */\n  searchEvent(search): void {\n    // check for cleared search\n    if (search === '') {\n      this.search = search;\n    }\n    this.searchChange.emit(this.search);\n  }\n\n  /**\n   * Called when a type has been selected\n   */\n  onTypeSelected(): void {\n    if (this.currentType) {\n      this.typeSelected.emit(this.currentType);\n    } else {\n      this.typeSelected.emit('');\n    }\n  }\n\n  /**\n   * Called when ability filter changes\n   */\n  onAbilitySelected(): void {\n    if (this.currentAbilities && this.currentAbilities.length) {\n      this.abilitiesSelected.emit(this.currentAbilities);\n    } else {\n      this.abilitiesSelected.emit('');\n    }\n  }\n\n  /**\n   * Grabs pokemons abilities and adds to array\n   */\n  setPokemonAbilities(pokemon: Results): void {\n    if (pokemon) {\n      pokemon.details.abilities.forEach(ability => {\n        const abilityName = ability.ability.name;\n        if (!this.abilities.includes(abilityName)) {\n          this.abilities.push(abilityName);\n          this.abilities.sort();\n        }\n      });\n    }\n  }\n\n  goToVotes($myParam: string = ''): void {\n    const navigationDetails: string[] = ['/votes'];\n    if($myParam.length) {\n      navigationDetails.push($myParam);\n    }\n    this.router.navigate(navigationDetails);\n  }\n\n  /**\n   * Grabs a pokemons types and adds to array\n   */\n  setPokemonTypes(pokemon: Results): void {\n    if (pokemon) {\n      pokemon.details.types.forEach(type => {\n        const typeName = type.type.name;\n        if (!this.types.includes(typeName)) {\n          this.types.push(typeName);\n          this.types.sort();\n        }\n      });\n    }\n  }\n\n  btnClick(pages):void {\n    this.router.navigateByUrl(pages);\n    console.log(pages);\n  }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-header/pokemon-header.component.ts b/src/components/pokemon-header/pokemon-header.component.ts
+--- a/src/components/pokemon-header/pokemon-header.component.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/pokemon-header/pokemon-header.component.ts	(date 1619370463367)
+@@ -1,6 +1,6 @@
+-import { Component, EventEmitter, Input, Output, OnInit } from '@angular/core';
+-import { Router } from '@angular/router';
+-import { Results } from 'src/interfaces';
++import {Component, EventEmitter, Input, Output, OnInit} from '@angular/core';
++import {Router} from '@angular/router';
++import {Results} from 'src/interfaces';
+ 
+ 
+ @Component({
+@@ -10,6 +10,7 @@
+ })
+ export class PokemonHeaderComponent implements OnInit {
+   [x: string]: any;
++
+   @Output() searchChange = new EventEmitter();
+   @Output() typeSelected = new EventEmitter();
+   @Output() abilitiesSelected = new EventEmitter();
+@@ -33,7 +34,8 @@
+     }
+   }
+ 
+-  constructor(private router : Router) {}
++  constructor(private router: Router) {
++  }
+ 
+   ngOnInit(): void {
+     this.abilities = [];
+@@ -88,13 +90,6 @@
+     }
+   }
+ 
+-  goToVotes($myParam: string = ''): void {
+-    const navigationDetails: string[] = ['/votes'];
+-    if($myParam.length) {
+-      navigationDetails.push($myParam);
+-    }
+-    this.router.navigate(navigationDetails);
+-  }
+ 
+   /**
+    * Grabs a pokemons types and adds to array
+@@ -111,7 +106,7 @@
+     }
+   }
+ 
+-  btnClick(pages):void {
++  btnClick(pages): void {
+     this.router.navigateByUrl(pages);
+     console.log(pages);
+   }
+Index: src/components/pokemon-accueil/pokemon-accueil.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { HttpClient } from '@angular/common/http';\nimport { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { environment } from 'src/environments/environment';\nimport { PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS } from 'src/interfaces';\nimport { PokemonService } from 'src/services/pokemon.service';\nimport { PokemonServiceInfoPokemonService } from 'src/services/pokemon-service-info-pokemon.service'\n\n@Component({\n  selector: 'app-pokemon-accueil',\n  templateUrl: './pokemon-accueil.component.html',\n  styleUrls: ['./pokemon-accueil.component.scss'],\n  providers:  [PokemonService]\n})\n\nexport class PokemonAccueilComponent implements OnInit {\n  @Output() exportPokemons = new EventEmitter();\n  @Output() typeSelected = new EventEmitter();\n\n  pokemonDetail!: PokemonDetails;\n  pokemons: PokeAPI;\n  pokemon: any; \n  pokemonAccueilAPI = environment.PokemonaccueilURL;\n  selectedPokeId: string = '';\n\n\n  Name : string = \"\";\n  bool : boolean =false;\n\n  constructor(private http:HttpClient,private pokemonService: PokemonService, private pokemonServiceInfo: PokemonServiceInfoPokemonService) {}\n\n  ngOnInit(): void {\n    this.getPokemons();\n  }\n\n  clickme(name:string):void {\n    if (name !=''){\n    this.pokemonAccueilAPI = environment.pokemonURL+'/'+name+'/'; \n    this.getPokemons();\n    this.pokemonService.getPokemonInfo(name).subscribe((data)=> this.pokemonDetail= data);\n    this.pokemonServiceInfo.setVelue(name);\n    }   \n  }\n\n  /**\n   * Loads in all 200 Original pokemon and gets\n   * their details and species details\n   */\n  getPokemons(): void {\n \n      this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data=>this.pokemon=data); \n  }\n/**\n * maj\n */\npublic maj(name : string) {\n  this.pokemonService.getPokemonDetails(name).subscribe((data)=> console.log(data));\n  this.Name=name;\n  this.pokemonService.setname(name);\n  this.bool = true;\n\n}\ngetName() : string {\n  console.log(this.pokemon);\n  return this.pokemon.name;\n  \n\n}\n \n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-accueil/pokemon-accueil.component.ts b/src/components/pokemon-accueil/pokemon-accueil.component.ts
+--- a/src/components/pokemon-accueil/pokemon-accueil.component.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/pokemon-accueil/pokemon-accueil.component.ts	(date 1619370463367)
+@@ -1,15 +1,15 @@
+-import { HttpClient } from '@angular/common/http';
+-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+-import { environment } from 'src/environments/environment';
+-import { PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS } from 'src/interfaces';
+-import { PokemonService } from 'src/services/pokemon.service';
+-import { PokemonServiceInfoPokemonService } from 'src/services/pokemon-service-info-pokemon.service'
++import {HttpClient} from '@angular/common/http';
++import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
++import {environment} from 'src/environments/environment';
++import {PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS} from 'src/interfaces';
++import {PokemonService} from 'src/services/pokemon.service';
++
+ 
+ @Component({
+   selector: 'app-pokemon-accueil',
+   templateUrl: './pokemon-accueil.component.html',
+   styleUrls: ['./pokemon-accueil.component.scss'],
+-  providers:  [PokemonService]
++  providers: [PokemonService]
+ })
+ 
+ export class PokemonAccueilComponent implements OnInit {
+@@ -18,27 +18,25 @@
+ 
+   pokemonDetail!: PokemonDetails;
+   pokemons: PokeAPI;
+-  pokemon: any; 
++  pokemon: any;
+   pokemonAccueilAPI = environment.PokemonaccueilURL;
+-  selectedPokeId: string = '';
+-
++  selectedPokeId = '';
++  Name = '';
++  bool = false;
+ 
+-  Name : string = "";
+-  bool : boolean =false;
+-
+-  constructor(private http:HttpClient,private pokemonService: PokemonService, private pokemonServiceInfo: PokemonServiceInfoPokemonService) {}
++  constructor(private http: HttpClient, private pokemonService: PokemonService) {
++  }
+ 
+   ngOnInit(): void {
+     this.getPokemons();
+   }
+ 
+-  clickme(name:string):void {
+-    if (name !=''){
+-    this.pokemonAccueilAPI = environment.pokemonURL+'/'+name+'/'; 
+-    this.getPokemons();
+-    this.pokemonService.getPokemonInfo(name).subscribe((data)=> this.pokemonDetail= data);
+-    this.pokemonServiceInfo.setVelue(name);
+-    }   
++  clickme(name: string): void {
++    // tslint:disable-next-line:triple-equals
++    if (name != '') {
++      this.pokemonAccueilAPI = environment.pokemonURL + '/' + name + '/';
++      this.getPokemons();
++    }
+   }
+ 
+   /**
+@@ -46,25 +44,27 @@
+    * their details and species details
+    */
+   getPokemons(): void {
+- 
+-      this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data=>this.pokemon=data); 
++
++    this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data => this.pokemon = data);
+   }
+-/**
+- * maj
+- */
+-public maj(name : string) {
+-  this.pokemonService.getPokemonDetails(name).subscribe((data)=> console.log(data));
+-  this.Name=name;
+-  this.pokemonService.setname(name);
+-  this.bool = true;
++
++  /**
++   * maj
++   */
++  public maj(name: string) {
++    this.pokemonService.getPokemonDetails(name).subscribe((data) => console.log(data));
++    this.Name = name;
++    this.pokemonService.setname(name);
++    this.bool = true;
+ 
+-}
+-getName() : string {
+-  console.log(this.pokemon);
+-  return this.pokemon.name;
+-  
++  }
++
++  getName(): string {
++    console.log(this.pokemon);
++    return this.pokemon.name;
++
+ 
+-}
+- 
++  }
++
+ 
+ }
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1619370463363)
++++ b/.idea/misc.xml	(date 1619370463363)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1619370463367)
++++ b/.idea/vcs.xml	(date 1619370463367)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+--- /dev/null	(date 1619371118559)
++++ b/.idea/workspace.xml	(date 1619371118559)
+@@ -0,0 +1,94 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ChangeListManager">
++    <list default="true" id="be3b58fe-6219-43a0-a70c-6c3422b67b0c" name="Default Changelist" comment="">
++      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.component.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.component.scss" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.component.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/pokemon-accueil/pokemon-accueil.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-accueil/pokemon-accueil.component.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/pokemon-accueil/pokemon-accueil.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-accueil/pokemon-accueil.component.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.scss" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/pokemon-homepage/pokemon-homepage.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-homepage/pokemon-homepage.component.html" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/components/pokemon-homepage/pokemon-homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-homepage/pokemon-homepage.component.ts" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/services/pokemon.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/pokemon.service.ts" afterDir="false" />
++    </list>
++    <option name="SHOW_DIALOG" value="false" />
++    <option name="HIGHLIGHT_CONFLICTS" value="true" />
++    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
++    <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="ProjectId" id="1raWkHNxD7uw2KNVqqUMmAINOHN" />
++  <component name="ProjectViewState">
++    <option name="hideEmptyMiddlePackages" value="true" />
++    <option name="showLibraryContents" value="true" />
++  </component>
++  <component name="PropertiesComponent">
++    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
++    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="WebServerToolWindowFactoryState" value="false" />
++    <property name="aspect.path.notification.shown" value="true" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="node.js.detected.package.tslint" value="true" />
++    <property name="node.js.selected.package.tslint" value="(autodetect)" />
++    <property name="nodejs_package_manager_path" value="npm" />
++    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
++  </component>
++  <component name="RunManager" selected="npm.Angular CLI Server">
++    <configuration name="E2E Tests (angular-pokemon)" type="JavaScriptTestRunnerProtractor">
++      <config-file value="$PROJECT_DIR$/e2e/protractor.conf.js" />
++      <node-interpreter value="project" />
++      <protractor-options value="" />
++      <envs />
++      <scope-kind value="ALL" />
++      <method v="2" />
++    </configuration>
++    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
++      <method v="2" />
++    </configuration>
++    <configuration name="Angular CLI Server" type="js.build_tools.npm">
++      <package-json value="$PROJECT_DIR$/package.json" />
++      <command value="run" />
++      <scripts>
++        <script value="start" />
++      </scripts>
++      <node-interpreter value="project" />
++      <envs />
++      <method v="2" />
++    </configuration>
++  </component>
++  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
++  <component name="TaskManager">
++    <task active="true" id="Default" summary="Default task">
++      <changelist id="be3b58fe-6219-43a0-a70c-6c3422b67b0c" name="Default Changelist" comment="" />
++      <created>1619214823390</created>
++      <option name="number" value="Default" />
++      <option name="presentableId" value="Default" />
++      <updated>1619214823390</updated>
++      <workItem from="1619214837750" duration="930000" />
++      <workItem from="1619275320074" duration="4905000" />
++    </task>
++    <servers />
++  </component>
++  <component name="TypeScriptGeneratedFilesManager">
++    <option name="version" value="3" />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++    <option name="oldMeFiltersMigrated" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/Angular-Pokemon.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Angular-Pokemon.iml b/.idea/Angular-Pokemon.iml
+new file mode 100644
+--- /dev/null	(date 1619370463339)
++++ b/.idea/Angular-Pokemon.iml	(date 1619370463339)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <excludeFolder url="file://$MODULE_DIR$/dist" />
++      <excludeFolder url="file://$MODULE_DIR$/tmp" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1619370463363)
++++ b/.idea/modules.xml	(date 1619370463363)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Angular-Pokemon.iml" filepath="$PROJECT_DIR$/.idea/Angular-Pokemon.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: src/components/pokemon-homepage/pokemon-homepage.component.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><div class=\"loading\" *ngIf=\"!pokemonsLoaded\">\n  <mat-spinner></mat-spinner>\n  LOADING POKEMONS...... \n</div>\n\n<div style=\"text-align:center\">\n  <div class=\"grid-layout\" *ngIf=\"pokemonsLoaded && pokemons\">\n    <div\n      *ngFor=\"let pokemon of pokemons.results | search: query | typeFilter: typeFilters | abilitiesFilter: abilityFilters\">\n      <mat-card class=\"pokemon-card\" *ngIf=\"pokemon.details\">\n        <mat-card-title>{{ pokemon.name | titlecase }}</mat-card-title>\n        <div class=\"id\">{{ pokemon.id }}</div>\n        <div class=\"background-image\">\n          <a routerLink='/pokemon/{{pokemon.name}}'> <img\n            mat-card-image\n            src=\"{{ pokemon.details.sprites.front_default }}\"\n            alt=\"photo of {{ pokemon.name}}\"\n          /></a>\n        \n        </div>\n        \n        <mat-card-content>\n          <div style=\"display: block;\">\n            <div\n              *ngFor=\"let type of pokemon.details.types\"\n              class=\"types\"\n              [style.background]=\"getTypeColour(type.type.name)\">\n              {{ type.type.name | titlecase }}\n            </div>\n          </div>\n        </mat-card-content>\n      </mat-card>\n    </div>\n  </div>\n</div>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-homepage/pokemon-homepage.component.html b/src/components/pokemon-homepage/pokemon-homepage.component.html
+--- a/src/components/pokemon-homepage/pokemon-homepage.component.html	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/pokemon-homepage/pokemon-homepage.component.html	(date 1619370463367)
+@@ -1,6 +1,6 @@
+ <div class="loading" *ngIf="!pokemonsLoaded">
+   <mat-spinner></mat-spinner>
+-  LOADING POKEMONS...... 
++  LOADING POKEMONS......
+ </div>
+ 
+ <div style="text-align:center">
+@@ -16,9 +16,7 @@
+             src="{{ pokemon.details.sprites.front_default }}"
+             alt="photo of {{ pokemon.name}}"
+           /></a>
+-        
+         </div>
+-        
+         <mat-card-content>
+           <div style="display: block;">
+             <div
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_24_04_2021_16_57_[Default_Changelist]/shelved.patch
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_24_04_2021_16_57_[Default_Changelist]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_24_04_2021_16_57_[Default_Changelist]/shelved.patch
+new file mode 100644
+--- /dev/null	(date 1619370463363)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_24_04_2021_16_57_[Default_Changelist]/shelved.patch	(date 1619370463363)
+@@ -0,0 +1,216 @@
++Index: src/components/pokemon-header/pokemon-header.component.html
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><mat-toolbar>\n  <img\n    class=\"logo\"\n    src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png\"\n  />\n  <div class=\"search-box\">\n    <input\n      matInput\n      class=\"search-input\"\n      type=\"text\"\n      [(ngModel)]=\"search\"\n      (ngModelChange)=\"searchEvent()\"\n      placeholder=\"Enter Pokemon name or id...\"\n    />\n    <button\n      mat-button\n      class=\"close-button\"\n      *ngIf=\"search\"\n      matSuffix\n      mat-icon-button\n      aria-label=\"Clear\"\n      (click)=\"searchEvent('')\"\n    >\n      <mat-icon>close</mat-icon>\n    </button>\n  </div>\n\n  <div class=\"filter-component\">\n    <mat-label class=\"filter\">Filter by Abilities</mat-label>\n    <mat-form-field class=\"form-field\">\n      <mat-select [(ngModel)]=\"currentAbilities\" (ngModelChange)=\"onAbilitySelected()\" multiple>\n          <mat-select-trigger>\n              {{currentAbilities ? currentAbilities[0]: ''}}\n              <span *ngIf=\"currentAbilities?.length > 1\" class=\"additional-selection\">\n                (+{{currentAbilities.length - 1}} {{currentAbilities?.length === 2 ? 'other' : 'others'}})\n              </span>\n            </mat-select-trigger>\n        <mat-option *ngFor=\"let ability of abilities\" [value]=\"ability\">\n          {{ ability | titlecase }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n\n <div class=\"filter-component\">\n    <mat-label class=\"filter\">Filter by Type</mat-label>\n    <mat-form-field class=\"form-field\">\n      <mat-select [(ngModel)]=\"currentType\" (ngModelChange)=\"onTypeSelected()\">\n        <mat-option>None</mat-option>\n        <mat-option *ngFor=\"let type of types\" [value]=\"type\">\n          {{ type | titlecase }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n\n  <button class=\"headerButton\" (click)=\"btnClick('')\"> Home</button>
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/src/components/pokemon-header/pokemon-header.component.html b/src/components/pokemon-header/pokemon-header.component.html
++--- a/src/components/pokemon-header/pokemon-header.component.html	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
+++++ b/src/components/pokemon-header/pokemon-header.component.html	(date 1619275571855)
++@@ -54,4 +54,4 @@
++     </mat-form-field>
++   </div>
++ 
++-  <button class="headerButton" (click)="btnClick('')"> Home</button>
++\ No newline at end of file
+++  <button class="headerButton" (click)="btnClick('')"> Home</button>
++Index: src/components/pokemon-accueil/pokemon-accueil.component.html
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><div style=\"text-align:center\">\n\n <h1> Welcome from {{this.getName()}}</h1>\n\n<img width=\"400\" alt=\"Pokemon sprite\" src={{pokemon.sprites.front_default}}>\n\n    <div class=\"search-pok\">\n      <input\n        matInput\n        class=\"search-input\"\n        type=\"text\"\n        placeholder=\"Enter Pokemon name or id...\"\n        name=\"pokemonName\" #pokemonName>\n\n      <button class=\"search-button\" type=\"button\" (click)=\"clickme(pokemonName.value)\">Select\n\n      </button>\n    </div>\n<div *ngIf=\"this.bool\"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->\n    <app-poke-info [Name]=Name></app-poke-info>\n    <app-poke-nav></app-poke-nav>\n    </div>\n\n  </div>\n\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/src/components/pokemon-accueil/pokemon-accueil.component.html b/src/components/pokemon-accueil/pokemon-accueil.component.html
++--- a/src/components/pokemon-accueil/pokemon-accueil.component.html	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
+++++ b/src/components/pokemon-accueil/pokemon-accueil.component.html	(date 1619215862943)
++@@ -1,25 +1,25 @@
++ <div style="text-align:center">
++ 
++- <h1> Welcome from {{this.getName()}}</h1>
+++  <h1> Welcome from {{this.getName()}}</h1>
++ 
++-<img width="400" alt="Pokemon sprite" src={{pokemon.sprites.front_default}}>
+++  <img width="400" alt="Pokemon sprite" src={{pokemon.sprites.front_default}}>
++ 
++-    <div class="search-pok">
++-      <input
++-        matInput
++-        class="search-input"
++-        type="text"
++-        placeholder="Enter Pokemon name or id..."
++-        name="pokemonName" #pokemonName>
+++  <div class="search-pok">
+++    <input
+++      matInput
+++      class="search-input"
+++      type="text"
+++      placeholder="Enter Pokemon name or id..."
+++      name="pokemonName" #pokemonName>
++ 
++-      <button class="search-button" type="button" (click)="clickme(pokemonName.value)">Select
+++    <button class="search-button" type="button" (click)="clickme(pokemonName.value)">Select
++ 
++-      </button>
++-    </div>
++-<div *ngIf="this.bool"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->
+++    </button>
+++  </div>
+++  <div *ngIf="this.bool"> <!-- a changer en if pokemon.name appartient a l'ensemble des pokemons-->
++     <app-poke-info [Name]=Name></app-poke-info>
++     <app-poke-nav></app-poke-nav>
++-    </div>
+++  </div>
++ 
++-  </div>
+++</div>
++ 
++Index: src/components/pokemon-accueil/pokemon-accueil.component.ts
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>import { HttpClient } from '@angular/common/http';\nimport { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { environment } from 'src/environments/environment';\nimport { PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS } from 'src/interfaces';\nimport { PokemonService } from 'src/services/pokemon.service';\nimport { PokemonServiceInfoPokemonService } from 'src/services/pokemon-service-info-pokemon.service'\n\n@Component({\n  selector: 'app-pokemon-accueil',\n  templateUrl: './pokemon-accueil.component.html',\n  styleUrls: ['./pokemon-accueil.component.scss'],\n  providers:  [PokemonService]\n})\n\nexport class PokemonAccueilComponent implements OnInit {\n  @Output() exportPokemons = new EventEmitter();\n  @Output() typeSelected = new EventEmitter();\n\n  pokemonDetail!: PokemonDetails;\n  pokemons: PokeAPI;\n  pokemon: any;\n  pokemonAccueilAPI = environment.PokemonaccueilURL;\n  selectedPokeId: string = '';\n\n\n  Name : string = \"\";\n  bool : boolean =false;\n\n  constructor(private http:HttpClient,private pokemonService: PokemonService, private pokemonServiceInfo: PokemonServiceInfoPokemonService) {}\n\n  ngOnInit(): void {\n    this.getPokemons();\n  }\n\n  clickme(name:string):void {\n    if (name !=''){\n    this.pokemonAccueilAPI = environment.pokemonURL+'/'+name+'/';\n    this.getPokemons();\n    this.pokemonService.getPokemonInfo(name).subscribe((data)=> this.pokemonDetail= data);\n    this.pokemonServiceInfo.setVelue(name);\n    }\n  }\n\n  /**\n   * Loads in all 200 Original pokemon and gets\n   * their details and species details\n   */\n  getPokemons(): void {\n\n      this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data=>this.pokemon=data);\n  }\n/**\n * maj\n */\npublic maj(name : string) {\n  this.pokemonService.getPokemonDetails(name).subscribe((data)=> console.log(data));\n  this.Name=name;\n  this.pokemonService.setname(name);\n  this.bool = true;\n\n}\ngetName() : string {\n  console.log(this.pokemon);\n  return this.pokemon.name;\n\n\n}\n\n\n}\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/src/components/pokemon-accueil/pokemon-accueil.component.ts b/src/components/pokemon-accueil/pokemon-accueil.component.ts
++--- a/src/components/pokemon-accueil/pokemon-accueil.component.ts	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
+++++ b/src/components/pokemon-accueil/pokemon-accueil.component.ts	(date 1619215495035)
++@@ -1,15 +1,15 @@
++-import { HttpClient } from '@angular/common/http';
++-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
++-import { environment } from 'src/environments/environment';
++-import { PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS } from 'src/interfaces';
++-import { PokemonService } from 'src/services/pokemon.service';
++-import { PokemonServiceInfoPokemonService } from 'src/services/pokemon-service-info-pokemon.service'
+++import {HttpClient} from '@angular/common/http';
+++import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+++import {environment} from 'src/environments/environment';
+++import {PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS} from 'src/interfaces';
+++import {PokemonService} from 'src/services/pokemon.service';
+++
++ 
++ @Component({
++   selector: 'app-pokemon-accueil',
++   templateUrl: './pokemon-accueil.component.html',
++   styleUrls: ['./pokemon-accueil.component.scss'],
++-  providers:  [PokemonService]
+++  providers: [PokemonService]
++ })
++ 
++ export class PokemonAccueilComponent implements OnInit {
++@@ -20,24 +20,22 @@
++   pokemons: PokeAPI;
++   pokemon: any;
++   pokemonAccueilAPI = environment.PokemonaccueilURL;
++-  selectedPokeId: string = '';
++-
+++  selectedPokeId = '';
+++  Name = '';
+++  bool = false;
++ 
++-  Name : string = "";
++-  bool : boolean =false;
++-
++-  constructor(private http:HttpClient,private pokemonService: PokemonService, private pokemonServiceInfo: PokemonServiceInfoPokemonService) {}
+++  constructor(private http: HttpClient, private pokemonService: PokemonService) {
+++  }
++ 
++   ngOnInit(): void {
++     this.getPokemons();
++   }
++ 
++-  clickme(name:string):void {
++-    if (name !=''){
++-    this.pokemonAccueilAPI = environment.pokemonURL+'/'+name+'/';
++-    this.getPokemons();
++-    this.pokemonService.getPokemonInfo(name).subscribe((data)=> this.pokemonDetail= data);
++-    this.pokemonServiceInfo.setVelue(name);
+++  clickme(name: string): void {
+++    // tslint:disable-next-line:triple-equals
+++    if (name != '') {
+++      this.pokemonAccueilAPI = environment.pokemonURL + '/' + name + '/';
+++      this.getPokemons();
++     }
++   }
++ 
++@@ -47,24 +45,26 @@
++    */
++   getPokemons(): void {
++ 
++-      this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data=>this.pokemon=data);
+++    this.pokemonService.getData(this.pokemonAccueilAPI).subscribe(data => this.pokemon = data);
++   }
++-/**
++- * maj
++- */
++-public maj(name : string) {
++-  this.pokemonService.getPokemonDetails(name).subscribe((data)=> console.log(data));
++-  this.Name=name;
++-  this.pokemonService.setname(name);
++-  this.bool = true;
+++
+++  /**
+++   * maj
+++   */
+++  public maj(name: string) {
+++    this.pokemonService.getPokemonDetails(name).subscribe((data) => console.log(data));
+++    this.Name = name;
+++    this.pokemonService.setname(name);
+++    this.bool = true;
++ 
++-}
++-getName() : string {
++-  console.log(this.pokemon);
++-  return this.pokemon.name;
+++  }
+++
+++  getName(): string {
+++    console.log(this.pokemon);
+++    return this.pokemon.name;
++ 
++ 
++-}
+++  }
++ 
++ 
++ }
++Index: src/components/pokemon-homepage/pokemon-homepage.component.html
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+><div class=\"loading\" *ngIf=\"!pokemonsLoaded\">\n  <mat-spinner></mat-spinner>\n  LOADING POKEMONS...... \n</div>\n\n<div style=\"text-align:center\">\n  <div class=\"grid-layout\" *ngIf=\"pokemonsLoaded && pokemons\">\n    <div\n      *ngFor=\"let pokemon of pokemons.results | search: query | typeFilter: typeFilters | abilitiesFilter: abilityFilters\">\n      <mat-card class=\"pokemon-card\" *ngIf=\"pokemon.details\">\n        <mat-card-title>{{ pokemon.name | titlecase }}</mat-card-title>\n        <div class=\"id\">{{ pokemon.id }}</div>\n        <div class=\"background-image\">\n          <a routerLink='/pokemon/{{pokemon.name}}'> <img\n            mat-card-image\n            src=\"{{ pokemon.details.sprites.front_default }}\"\n            alt=\"photo of {{ pokemon.name}}\"\n          /></a>\n        \n        </div>\n        \n        <mat-card-content>\n          <div style=\"display: block;\">\n            <div\n              *ngFor=\"let type of pokemon.details.types\"\n              class=\"types\"\n              [style.background]=\"getTypeColour(type.type.name)\">\n              {{ type.type.name | titlecase }}\n            </div>\n          </div>\n        </mat-card-content>\n      </mat-card>\n    </div>\n  </div>\n</div>\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/src/components/pokemon-homepage/pokemon-homepage.component.html b/src/components/pokemon-homepage/pokemon-homepage.component.html
++--- a/src/components/pokemon-homepage/pokemon-homepage.component.html	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
+++++ b/src/components/pokemon-homepage/pokemon-homepage.component.html	(date 1619217087317)
++@@ -16,9 +16,7 @@
++             src="{{ pokemon.details.sprites.front_default }}"
++             alt="photo of {{ pokemon.name}}"
++           /></a>
++-        
++         </div>
++-        
++         <mat-card-content>
++           <div style="display: block;">
++             <div
++Index: src/components/pokemon-homepage/pokemon-homepage.component.ts
++IDEA additional info:
++Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
++<+>import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { PokeAPI, PokemonDetails, Results, TYPE_COLOURS } from 'src/interfaces';\nimport { PokemonService } from 'src/services/pokemon.service';\n\n@Component({\n  selector: 'app-pokemon-homepage',\n  templateUrl: './pokemon-homepage.component.html',\n  styleUrls: ['./pokemon-homepage.component.scss']\n})\nexport class PokemonHomepageComponent implements OnInit {\n  @Output() exportPokemons = new EventEmitter();\n  @Output() typeSelected = new EventEmitter();\n \n  pokemonsLoaded: boolean;\n  pokemons: PokeAPI;\n  query: string;\n  abilityFilters: Array<string>;\n  typeFilters: string;\n  currentType: String; \n  types: Array<string>;\n  pokemonList: Array<Results>;\n  \n  @Input() set search(newSearch: string) {\n    if (newSearch !== this.query) {\n      this.query = newSearch;\n    }\n  }\n\n  @Input() set typeFilter(type: string) {\n    if (type !== this.typeFilter) {\n      this.typeFilters = type;\n    }\n  }\n\n  @Input() set abilityFilter(abilities: Array<string>) {\n    if (abilities !== this.abilityFilters) {\n      this.abilityFilters = abilities;\n    }\n  }\n\n  @Input() set pokemonsType(pokemons: Results[]) {\n    if (pokemons !== this.pokemonList) {\n      this.pokemonList = pokemons;\n      this.pokemonList.forEach(pokemon => {\n        this.setPokemonTypes(pokemon);\n      });\n    }\n  }\n\n  constructor(private pokemonService: PokemonService) {}\n\n  ngOnInit(): void {\n    this.pokemonsLoaded = false;\n    this.types = [];\n    this.getPokemons();\n  }\n\n  /**\n   * Loads in all 200 Original pokemon and gets\n   * their details and species details\n   */\n  getPokemons(): void {\n    this.pokemonService.getPokemon().subscribe((data: PokeAPI) => {\n      this.pokemons = data;\n\n      if (this.pokemons.results && this.pokemons.results.length) {\n        // get pokemon details for every pokemon\n        this.pokemons.results.forEach(pokemon => {\n          // set pokemon id\n          pokemon.id = pokemon.url.split('/')[\n            pokemon.url.split('/').length - 2\n          ];\n\n          this.getPokemonDetails(pokemon);\n          this.getPokemonSpeciesDetails(pokemon);\n        });\n      }\n    });\n  }\n\n  /**\n   * Gets and sets a pokemons details\n   */\n  getPokemonDetails(pokemon: Results): void {\n    this.pokemonService\n      .getPokemonDetails(pokemon.name)\n      .subscribe((details: PokemonDetails) => {\n        pokemon.details = details;\n        \n        // when last pokemon details have been loaded\n        // send pokemons to header component\n        if (pokemon.id === '200') {\n          this.pokemonsLoaded = true;\n          this.exportPokemons.emit(this.pokemons.results);\n        }\n      });\n  }\n\n  getPokemonSpeciesDetails(pokemon: Results): void {\n    this.pokemonService\n      .getPokemonSpecies(pokemon.name)\n      .subscribe((species: any) => {\n        const entries = species.flavor_text_entries;\n        if (entries) {\n          entries.some(flavor => {\n            if (flavor.language.name === 'en') {\n              pokemon.description = flavor.flavor_text;\n            }\n          });\n        }\n      });\n  }\n\n /**\n   * Called when a type has been selected\n   */\n  onTypeSelected(): void {\n    if (this.currentType) {\n      this.typeSelected.emit(this.currentType);\n    } else {\n      this.typeSelected.emit('');\n    }\n  }\n\n  /**\n   * Grabs a pokemons types and adds to array\n   */\n  setPokemonTypes(pokemon: Results): void {\n    if (pokemon) {\n      pokemon.details.types.forEach(type => {\n        const typeName = type.type.name;\n        if (!this.types.includes(typeName)) {\n          this.types.push(typeName);\n          this.types.sort();\n        }\n      });\n    }\n  }\n\n  /**\n   * returns colour based on type mapped\n   * in TYPE_COLOURS interface\n   */\n  getTypeColour(type: string): string {\n    if (type) {\n      return '#' + TYPE_COLOURS[type];\n    }\n  }\n\n}\n
++Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
++<+>UTF-8
++===================================================================
++diff --git a/src/components/pokemon-homepage/pokemon-homepage.component.ts b/src/components/pokemon-homepage/pokemon-homepage.component.ts
++--- a/src/components/pokemon-homepage/pokemon-homepage.component.ts	(revision 31ac5f78bf15c0d629913a9bfa26321d62bac130)
+++++ b/src/components/pokemon-homepage/pokemon-homepage.component.ts	(date 1619216402173)
++@@ -54,7 +54,7 @@
++     this.types = [];
++     this.getPokemons();
++   }
++-
+++s
++   /**
++    * Loads in all 200 Original pokemon and gets
++    * their details and species details
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+new file mode 100644
+--- /dev/null	(date 1619370463363)
++++ b/.idea/inspectionProfiles/Project_Default.xml	(date 1619370463363)
+@@ -0,0 +1,6 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="TsLint" enabled="true" level="WARNING" enabled_by_default="true" />
++  </profile>
++</component>
+\ No newline at end of file
+Index: .idea/codeStyles/Project.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/codeStyles/Project.xml b/.idea/codeStyles/Project.xml
+new file mode 100644
+--- /dev/null	(date 1619370463355)
++++ b/.idea/codeStyles/Project.xml	(date 1619370463355)
+@@ -0,0 +1,20 @@
++<component name="ProjectCodeStyleConfiguration">
++  <code_scheme name="Project" version="173">
++    <option name="LINE_SEPARATOR" value="&#13;" />
++    <TypeScriptCodeStyleSettings version="0">
++      <option name="FORCE_SEMICOLON_STYLE" value="true" />
++      <option name="SPACE_BEFORE_FUNCTION_LEFT_PARENTH" value="false" />
++      <option name="USE_DOUBLE_QUOTES" value="false" />
++      <option name="FORCE_QUOTE_STYlE" value="true" />
++      <option name="SPACE_WITHIN_TYPE_ASSERTION" value="true" />
++      <option name="BLACKLIST_IMPORTS" value="rxjs/Rx" />
++    </TypeScriptCodeStyleSettings>
++    <codeStyleSettings language="TypeScript">
++      <option name="RIGHT_MARGIN" value="140" />
++      <option name="IF_BRACE_FORCE" value="3" />
++      <option name="DOWHILE_BRACE_FORCE" value="3" />
++      <option name="WHILE_BRACE_FORCE" value="3" />
++      <option name="FOR_BRACE_FORCE" value="3" />
++    </codeStyleSettings>
++  </code_scheme>
++</component>
+\ No newline at end of file
+Index: src/interfaces.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>export enum TYPE_COLOURS {\n  ground = 'D3B357',\n  ice = 'A3E7FD',\n  normal = 'C8C4BC',\n  poison = '934594',\n  psychic = 'ED4882',\n  rock = 'B5B5C3',\n  steel = 'B9A156',\n  water = 'F4B1F4',\n  bug = 'B1C12E',\n  dark = '6060B2',\n  dragon = '755EDF',\n  electric = 'F8D030',\n  fairy = '3295F6',\n  fighting = '82351D',\n  fire = 'E73B0C',\n  flying = 'A3B3F7',\n  ghost = '4F3A2D',\n  grass = '74C236'\n \n}\n\nexport interface Ability {\n  ability:   Species;\n  is_hidden: boolean;\n  slot:      number;\n}\n\nexport interface Species {\n  name: string;\n  url:  string;\n}\n\nexport interface PokemonDetails {\n  name: string;\n  id: number;\n  sprites: Sprites;\n  abilities?: Array<any>;\n  types?: Array<any>;\n  \n}\n\nexport interface PokemonEvolution {\n  name : string; \n  id: number; \n  results: Results[]; \n\n}\n\n\nexport interface PokeAPI {\n  count: number;\n  next: string;\n  results: Results[];\n}\n\nexport interface Results {\n  name: string;\n  url: string;\n  id?: string;\n  details?: PokemonDetails;\n  description?: string;\n  evolution : PokemonEvolution; \n}\n\n\n\nexport interface Sprites {\n  front_default: string;\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/interfaces.ts b/src/interfaces.ts
+--- a/src/interfaces.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/interfaces.ts	(date 1619370463367)
+@@ -37,6 +37,7 @@
+   sprites: Sprites;
+   abilities?: Array<any>;
+   types?: Array<any>;
++  abilitiess:Ability[];
+   
+ }
+ 
+Index: .idea/codeStyles/codeStyleConfig.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/codeStyles/codeStyleConfig.xml b/.idea/codeStyles/codeStyleConfig.xml
+new file mode 100644
+--- /dev/null	(date 1619370463355)
++++ b/.idea/codeStyles/codeStyleConfig.xml	(date 1619370463355)
+@@ -0,0 +1,5 @@
++<component name="ProjectCodeStyleConfiguration">
++  <state>
++    <option name="USE_PER_PROJECT_SETTINGS" value="true" />
++  </state>
++</component>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1619370463339)
++++ b/.idea/.gitignore	(date 1619370463339)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+Index: src/components/pokemon-homepage/pokemon-homepage.component.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\nimport { PokeAPI, PokemonDetails, Results, TYPE_COLOURS } from 'src/interfaces';\nimport { PokemonService } from 'src/services/pokemon.service';\n\n@Component({\n  selector: 'app-pokemon-homepage',\n  templateUrl: './pokemon-homepage.component.html',\n  styleUrls: ['./pokemon-homepage.component.scss']\n})\nexport class PokemonHomepageComponent implements OnInit {\n  @Output() exportPokemons = new EventEmitter();\n  @Output() typeSelected = new EventEmitter();\n \n  pokemonsLoaded: boolean;\n  pokemons: PokeAPI; // POKEAPI a la base\n  query: string;\n  abilityFilters: Array<string>;\n  typeFilters: string;\n  currentType: String; \n  types: Array<string>;\n  pokemonList: Array<Results>;\n  \n  @Input() set search(newSearch: string) {\n    if (newSearch !== this.query) {\n      this.query = newSearch;\n    }\n  }\n\n  @Input() set typeFilter(type: string) {\n    if (type !== this.typeFilter) {\n      this.typeFilters = type;\n    }\n  }\n\n  @Input() set abilityFilter(abilities: Array<string>) {\n    if (abilities !== this.abilityFilters) {\n      this.abilityFilters = abilities;\n    }\n  }\n\n  @Input() set pokemonsType(pokemons: Results[]) {\n    if (pokemons !== this.pokemonList) {\n      this.pokemonList = pokemons;\n      this.pokemonList.forEach(pokemon => {\n        this.setPokemonTypes(pokemon);\n      });\n    }\n  }\n\n  constructor(private pokemonService: PokemonService) {}\n\n  ngOnInit(): void {\n    this.pokemonsLoaded = false;\n    this.types = [];\n    this.getPokemons();\n  }\n\n  /**\n   * Loads in all 200 Original pokemon and gets\n   * their details and species details\n   */\n  getPokemons(): void {\n    this.pokemonService.getPokemon().subscribe((data: PokeAPI) => {\n      this.pokemons = data;\n\n      if (this.pokemons.results && this.pokemons.results.length) {\n        // get pokemon details for every pokemon\n        this.pokemons.results.forEach(pokemon => {\n          // set pokemon id\n          pokemon.id = pokemon.url.split('/')[\n            pokemon.url.split('/').length - 2\n          ];\n\n          this.getPokemonDetails(pokemon);\n          this.getPokemonSpeciesDetails(pokemon);\n        });\n      }\n    });\n  }\n\n  /**\n   * Gets and sets a pokemons details\n   */\n  getPokemonDetails(pokemon: Results): void {\n    this.pokemonService\n      .getPokemonDetails(pokemon.name)\n      .subscribe((details: PokemonDetails) => {\n        pokemon.details = details;\n        \n        // when last pokemon details have been loaded\n        // send pokemons to header component\n        if (pokemon.id === '200') {\n          this.pokemonsLoaded = true;\n          this.exportPokemons.emit(this.pokemons.results);\n        }\n      });\n  }\n\n  getPokemonSpeciesDetails(pokemon: Results): void {\n    this.pokemonService\n      .getPokemonSpecies(pokemon.name)\n      .subscribe((species: any) => {\n        const entries = species.flavor_text_entries;\n        if (entries) {\n          entries.some(flavor => {\n            if (flavor.language.name === 'en') {\n              pokemon.description = flavor.flavor_text;\n            }\n          });\n        }\n      });\n  }\n\n /**\n   * Called when a type has been selected\n   */\n  onTypeSelected(): void {\n    if (this.currentType) {\n      this.typeSelected.emit(this.currentType);\n    } else {\n      this.typeSelected.emit('');\n    }\n  }\n\n  /**\n   * Grabs a pokemons types and adds to array\n   */\n  setPokemonTypes(pokemon: Results): void {\n    if (pokemon) {\n      pokemon.details.types.forEach(type => {\n        const typeName = type.type.name;\n        if (!this.types.includes(typeName)) {\n          this.types.push(typeName);\n          this.types.sort();\n        }\n      });\n    }\n  }\n\n  /**\n   * returns colour based on type mapped\n   * in TYPE_COLOURS interface\n   */\n  getTypeColour(type: string): string {\n    if (type) {\n      return '#' + TYPE_COLOURS[type];\n    }\n  }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/components/pokemon-homepage/pokemon-homepage.component.ts b/src/components/pokemon-homepage/pokemon-homepage.component.ts
+--- a/src/components/pokemon-homepage/pokemon-homepage.component.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/components/pokemon-homepage/pokemon-homepage.component.ts	(date 1619370463367)
+@@ -10,16 +10,16 @@
+ export class PokemonHomepageComponent implements OnInit {
+   @Output() exportPokemons = new EventEmitter();
+   @Output() typeSelected = new EventEmitter();
+- 
++
+   pokemonsLoaded: boolean;
+   pokemons: PokeAPI; // POKEAPI a la base
+   query: string;
+   abilityFilters: Array<string>;
+   typeFilters: string;
+-  currentType: String; 
++  currentType: String;
+   types: Array<string>;
+   pokemonList: Array<Results>;
+-  
++
+   @Input() set search(newSearch: string) {
+     if (newSearch !== this.query) {
+       this.query = newSearch;
+@@ -54,7 +54,7 @@
+     this.types = [];
+     this.getPokemons();
+   }
+-
++s
+   /**
+    * Loads in all 200 Original pokemon and gets
+    * their details and species details
+@@ -86,7 +86,7 @@
+       .getPokemonDetails(pokemon.name)
+       .subscribe((details: PokemonDetails) => {
+         pokemon.details = details;
+-        
++
+         // when last pokemon details have been loaded
+         // send pokemons to header component
+         if (pokemon.id === '200') {
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_24_04_2021_16_57__Default_Changelist_.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_24_04_2021_16_57__Default_Changelist_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_24_04_2021_16_57__Default_Changelist_.xml
+new file mode 100644
+--- /dev/null	(date 1619371118395)
++++ b/.idea/shelf/Uncommitted_changes_before_Update_at_24_04_2021_16_57__Default_Changelist_.xml	(date 1619371118395)
+@@ -0,0 +1,4 @@
++<changelist name="Uncommitted_changes_before_Update_at_24_04_2021_16_57_[Default_Changelist]" date="1619276240779" recycled="true" deleted="true">
++  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_24_04_2021_16_57_[Default_Changelist]/shelved.patch" />
++  <option name="DESCRIPTION" value="Uncommitted changes before Update at 24/04/2021 16:57 [Default Changelist]" />
++</changelist>
+\ No newline at end of file
+Index: src/services/pokemon.service.ts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import { HttpClient, HttpErrorResponse } from '@angular/common/http';\nimport { Injectable } from '@angular/core';\nimport { env } from 'process';\nimport { Observable, throwError } from 'rxjs';\nimport { catchError } from 'rxjs/operators';\nimport { environment } from 'src/environments/environment';\nimport { PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class PokemonService {\n  pokeAPI: any;\n  pokeSpeciesAPI: any;\n  pokeEvolution:any;\n  nametopass : string;\n \n  constructor(private http: HttpClient) {\n    this.pokeAPI = environment.pokemonURL;\n    this.pokeSpeciesAPI = environment.pokemonSpeciesURL;\n    this.pokeEvolution = environment.pokemonEvolutionURl; \n   \n  }\n\n  /**\n   * Returns 200 pokemons  \n   * \n   */\n  getPokemon(): Observable<PokeAPI> {\n    return this.http\n      .get<PokeAPI>(`${this.pokeAPI}?limit=200`)\n      .pipe(catchError(this._handleError));\n  }\n/**\n * \n * @param url \n * @returns \n */\n  getData(url:string){\n    return this.http.get(url)\n }\n\n  /**\n   * Uses pokemon name to retrieve individual pokemon details\n   */\n  getPokemonDetails(name): Observable<PokemonDetails> {\n    return this.http\n      .get<PokemonDetails>(`${this.pokeAPI}/${name}`)\n      .pipe(catchError(this._handleError));\n  }\n/**\n * Retrives information about pokemon \n * @param id \n * @returns \n */\n  getPokemonInfo(id:string): Observable<PokemonDetails>{\n    return this.http.get<PokemonDetails>(this.pokeAPI + id + '/');\n  }\n\n  /**\n   * Uses pokemon name to retrieve individual pokemon species details\n   */\n  getPokemonSpecies(name): Observable<any> {\n    return this.http\n      .get<any>(`${this.pokeSpeciesAPI}/${name}`)\n      .pipe(catchError(this._handleError));\n  }\n\n  getPokemonEvolution(name): Observable<PokemonEvolution>{\n    return this.http\n      .get<PokemonEvolution>(`${this.pokeEvolution}/${name}`)\n      .pipe(catchError(this._handleError));\n  }\n\n  /**\n   * Handles any request error\n   */\n  private _handleError(error: HttpErrorResponse) {\n    if (error.error instanceof ErrorEvent) {\n      // A client-side or network error occurred. Handle it accordingly.\n      console.error('An error occurred:', error.error.message);\n    } else {\n      // The backend returned an unsuccessful response code.\n      // The response body may contain clues as to what went wrong,\n      console.error(\n        `Backend returned code ${error.status}, ` + `body was: ${error.error}`\n      );\n    }\n    // return an observable with a user-facing error message\n    return throwError('Something bad happened; please try again later.');\n  }\n   setname(name : string) : void {\n    this.nametopass = name;\n  }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/services/pokemon.service.ts b/src/services/pokemon.service.ts
+--- a/src/services/pokemon.service.ts	(revision 123c72204887884b43fb7209ced9b343093d2dde)
++++ b/src/services/pokemon.service.ts	(date 1619370463371)
+@@ -1,10 +1,10 @@
+-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+-import { Injectable } from '@angular/core';
+-import { env } from 'process';
+-import { Observable, throwError } from 'rxjs';
+-import { catchError } from 'rxjs/operators';
+-import { environment } from 'src/environments/environment';
+-import { PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
++import {HttpClient, HttpErrorResponse} from '@angular/common/http';
++import {Injectable} from '@angular/core';
++import {env} from 'process';
++import {Observable, throwError} from 'rxjs';
++import {catchError} from 'rxjs/operators';
++import {environment} from 'src/environments/environment';
++import {PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
+ 
+ @Injectable({
+   providedIn: 'root'
+@@ -12,33 +12,34 @@
+ export class PokemonService {
+   pokeAPI: any;
+   pokeSpeciesAPI: any;
+-  pokeEvolution:any;
+-  nametopass : string;
+- 
++  pokeEvolution: any;
++  nametopass: string;
++
+   constructor(private http: HttpClient) {
+     this.pokeAPI = environment.pokemonURL;
+     this.pokeSpeciesAPI = environment.pokemonSpeciesURL;
+-    this.pokeEvolution = environment.pokemonEvolutionURl; 
+-   
++    this.pokeEvolution = environment.pokemonEvolutionURl;
++
+   }
+ 
+   /**
+-   * Returns 200 pokemons  
+-   * 
++   * Returns 200 pokemons
++   *
+    */
+   getPokemon(): Observable<PokeAPI> {
+     return this.http
+       .get<PokeAPI>(`${this.pokeAPI}?limit=200`)
+       .pipe(catchError(this._handleError));
+   }
+-/**
+- * 
+- * @param url 
+- * @returns 
+- */
+-  getData(url:string){
+-    return this.http.get(url)
+- }
++
++  /**
++   *
++   * @param url
++   * @returns
++   */
++  getData(url: string) {
++    return this.http.get(url);
++  }
+ 
+   /**
+    * Uses pokemon name to retrieve individual pokemon details
+@@ -48,13 +49,17 @@
+       .get<PokemonDetails>(`${this.pokeAPI}/${name}`)
+       .pipe(catchError(this._handleError));
+   }
+-/**
+- * Retrives information about pokemon 
+- * @param id 
+- * @returns 
+- */
+-  getPokemonInfo(id:string): Observable<PokemonDetails>{
+-    return this.http.get<PokemonDetails>(this.pokeAPI + id + '/');
++
++  /**
++   * Retrives information about pokemon
++   * @param id
++   * @returns
++   */
++  getPokemonInfo(id: string): Observable<PokemonDetails> {
++    return this.http
++      .get<PokemonDetails>(this.pokeAPI + '/' + id + '/')
++      .pipe(catchError(this._handleError));
++
+   }
+ 
+   /**
+@@ -66,7 +71,7 @@
+       .pipe(catchError(this._handleError));
+   }
+ 
+-  getPokemonEvolution(name): Observable<PokemonEvolution>{
++  getPokemonEvolution(name): Observable<PokemonEvolution> {
+     return this.http
+       .get<PokemonEvolution>(`${this.pokeEvolution}/${name}`)
+       .pipe(catchError(this._handleError));
+@@ -89,7 +94,8 @@
+     // return an observable with a user-facing error message
+     return throwError('Something bad happened; please try again later.');
+   }
+-   setname(name : string) : void {
++
++  setname(name: string): void {
+     this.nametopass = name;
+   }
+ }
