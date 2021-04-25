@@ -1,7 +1,6 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { ɵBrowserGetTestability } from '@angular/platform-browser';
-import { url } from 'inspector';
 import { env } from 'process';
 import { observable, Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
@@ -32,7 +31,7 @@ export class PokemonService {
    */
   getPokemon(): Observable<PokeAPI> {
     return this.http
-      .get<PokeAPI>(`${this.pokeAPI}?limit=151`)
+      .get<PokeAPI>(`${this.pokeAPI}?limit=200`)
       .pipe(catchError(this._handleError));
   }
 /**
