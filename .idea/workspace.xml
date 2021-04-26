@@ -2,29 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a92dedb-f944-4b6a-8e1e-40a94abce0b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_04_2021_19_18_[Default_Changelist]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_04_2021_19_18__Default_Changelist_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ability/ability.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ability/ability.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ability/ability.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/ability/ability.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/poke-info/poke-info.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poke-info/poke-info.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/poke-info/poke-info.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poke-info/poke-info.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/home.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokemon-accueil/pokemon-accueil.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-accueil/pokemon-accueil.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/pokemon-homepage/pokemon-homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-homepage/pokemon-homepage.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/pokemon.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/pokemon.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619374694488</updated>
       <workItem from="1619374700392" duration="1190000" />
+      <workItem from="1619448886348" duration="592000" />
     </task>
     <servers />
   </component>
@@ -75,6 +59,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -82,7 +67,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/pokemon-accueil/pokemon-accueil.component.ts</url>
           <line>9</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -1,11 +1,10 @@
 .mat-toolbar {
   background-color: #6591c3;
-  box-shadow: 0 2px 2px #c51a1a33;
+  box-shadow: 0 2px 2px #9c797933;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
   z-index: 1000;
-  align-content: space-between;
 
   .logo {
     margin-left: 60px;
@@ -47,6 +46,8 @@
       font-size: 0.85em;
     }
   }
+
+
   .filter-component {
     margin-left: 83px;
     .filter {
@@ -58,26 +59,14 @@
       margin-top: 10px;
     }
   }
-
+}
 .headerButton {
-  margin-left: +2px;
-  background-color: #6591c3;
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: rgb(12, 5, 5);
-  border-radius: 15px;
-
   color: currentColor;
   padding: 08px;
-
+  background-color: #6591c3;
   margin-left: 83px;
 }
-}
+
 @media only screen and (max-width: 500px) {
 .mat-toolbar {
   display: table;
