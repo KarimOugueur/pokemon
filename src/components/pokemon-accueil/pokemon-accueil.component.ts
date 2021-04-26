@@ -1,7 +1,7 @@
 import {HttpClient} from '@angular/common/http';
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 import {environment} from 'src/environments/environment';
-import {PokeAPI, PokemonDetails, PokemonEvolution, Results, TYPE_COLOURS} from 'src/interfaces';
+import {PokeAPI, PokemonDetails } from 'src/interfaces';
 import {PokemonService} from 'src/services/pokemon.service';
 
 
@@ -19,7 +19,8 @@ export class PokemonAccueilComponent implements OnInit {
   pokemonDetail!: PokemonDetails;
   pokemons: PokeAPI;
   pokemon: any;
-  pokemonAccueilAPI = environment.PokemonaccueilURL;
+  pokemonURL = 'https://pokeapi.co/api/v2/pokemon'; 
+  pokemonAccueilAPI = 'https://pokeapi.co/api/v2/pokemon/growlithe/';
   selectedPokeId = '';
   Name = '';
   bool = false;
@@ -34,7 +35,7 @@ export class PokemonAccueilComponent implements OnInit {
   clickme(name: string): void {
     // tslint:disable-next-line:triple-equals
     if (name != '') {
-      this.pokemonAccueilAPI = environment.pokemonURL + '/' + name + '/';
+      this.pokemonAccueilAPI = this.pokemonURL + '/' + name + '/';
       this.getPokemons();
     }
   }

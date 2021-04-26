@@ -1,9 +1,7 @@
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ɵBrowserGetTestability } from '@angular/platform-browser';
 
-import { env } from 'process';
-import { observable, Observable, throwError } from 'rxjs';
+import {  Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { Ability, Evolution, Moves, PokeAPI, PokemonDetails, PokemonEvolution} from 'src/interfaces';
@@ -20,9 +18,9 @@ export class PokemonService {
 
 
   constructor(private http: HttpClient) {
-    this.pokeAPI = environment.pokemonURL;
-    this.pokeSpeciesAPI = environment.pokemonSpeciesURL;
-    this.pokeEvolution = environment.pokemonEvolutionURl;
+    this.pokeAPI = 'https://pokeapi.co/api/v2/pokemon';
+    this.pokeSpeciesAPI = 'https://pokeapi.co/api/v2/pokemon-species';
+    this.pokeEvolution = 'https://pokeapi.co/api/v2/evolution-trigger';
 
   }
 

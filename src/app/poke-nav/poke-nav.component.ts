@@ -16,8 +16,6 @@ export class PokeNavComponent implements OnInit {
   display : boolean = false;
 
 
-
-
   constructor(private pokeService : PokemonService,private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -25,7 +23,7 @@ export class PokeNavComponent implements OnInit {
     this.pokeService.getPokemonDetails(this.name).subscribe((data)=> { this.details=data;console.log(data);});  
     this.pokeService.getMoves(this.name).subscribe();
   }
-  private getSprites(): Sprites{
+  getSprites(): Sprites{
     return this.details.sprites;
     
     

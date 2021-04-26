@@ -19,7 +19,7 @@ import {PokeInfoComponent} from 'src/app/poke-info/poke-info.component';
 import {RouterModule, Routes} from '@angular/router';
 import {PokeNavComponent} from './poke-nav/poke-nav.component';
 import {AbilityComponent} from './ability/ability.component';
-
+import {EvolutionFilterPipe} from 'src/pipes/evolution-filter.pipe'
 
 @NgModule({
   declarations: [
@@ -34,7 +34,8 @@ import {AbilityComponent} from './ability/ability.component';
     AbilitiesFilterPipe,
     PokeInfoComponent,
     PokeNavComponent,
-    AbilityComponent
+    AbilityComponent,
+    EvolutionFilterPipe
 
   ],
   imports: [

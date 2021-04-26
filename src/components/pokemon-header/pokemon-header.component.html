@@ -9,7 +9,7 @@
       class="search-input"
       type="text"
       [(ngModel)]="search"
-      (ngModelChange)="searchEvent()"
+      (ngModelChange)="searchEvent('')"
       placeholder="Enter Pokemon name or id..."
     />
     <button
@@ -54,5 +54,5 @@
     </mat-form-field>
   </div>
 
-  <button class="headerButton" (click)="btnClick('')"> Accueil</button>
+  <button class="headerButton" (click)="btnClick('')"> Home</button>
 </mat-toolbar>

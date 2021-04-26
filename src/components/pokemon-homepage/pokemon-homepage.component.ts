@@ -146,5 +146,5 @@ s
       return '#' + TYPE_COLOURS[type];
     }
   }
-
+  
 }
