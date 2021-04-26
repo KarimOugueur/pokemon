@@ -1,40 +1,31 @@
-# Web Engineering M1 IL ISTIC Project 
+# Web Engineering Project, M1 IL ISTIC  
 # Binôme
     Karim OUGUEUR
     Nicolas Demongeot 
 
-
-
-## test 
-git clone 
-npm update 
-npm install --save-dev @angular-devkit/build-angular
-
+# Description : 
+This project is the continuation of the tp1, we took the tp1 and we added features such as:
+   *  Retrives all pokemons (here we get only 200 pokemons)
+   *  Home page: search bar to look for a pokemon either with the name or ID. 
+   *  Pokedex: display of all the pokemons, by clicking an pokemon we display     characteristics of each pokemo. 
 
 # AngularApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.6.3.
+    
+
+## setup  
+npm install or npm install --save-dev @angular-devkit/build-angular
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
 ## API POkEMON
 [doc pokemon v2](https://pokeapi.co/docs/v2)

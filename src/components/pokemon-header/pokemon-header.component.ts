@@ -110,5 +110,4 @@ export class PokemonHeaderComponent implements OnInit {
     this.router.navigateByUrl(pages);
     console.log(pages);
   }
-
 }

@@ -40,8 +40,8 @@ export class PokemonAccueilComponent implements OnInit {
   }
 
   /**
-   * Loads in all 200 Original pokemon and gets
-   * their details and species details
+   * Loads  Original pokemon  
+   *
    */
   getPokemons(): void {
 
@@ -49,7 +49,7 @@ export class PokemonAccueilComponent implements OnInit {
   }
 
   /**
-   * maj
+   * get pokemon Details 
    */
   public maj(name: string) {
     this.pokemonService.getPokemonDetails(name).subscribe((data) => console.log(data));
