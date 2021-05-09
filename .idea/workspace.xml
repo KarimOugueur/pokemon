@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a92dedb-f944-4b6a-8e1e-40a94abce0b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokemon-accueil/pokemon-accueil.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-accueil/pokemon-accueil.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokemon-homepage/pokemon-homepage.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-homepage/pokemon-homepage.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/pokemon.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/pokemon.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/3rdpartylicenses.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/main-es2015.84a66f99e94c76926ac2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/main-es5.a30598b4c2de83723bdb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/polyfills-es2015.64e7dbc71c3181e70041.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/polyfills-es5.dd6aa116b3511dfed423.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/runtime-es2015.858f8dd898b75fe86926.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/runtime-es5.741402d1d47331ce975c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/angular-pokemon/styles.398e39dc9f833d5c95dd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/poke-nav/poke-nav.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pokemon-header/pokemon-header.component.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +49,9 @@
       <updated>1619374694488</updated>
       <workItem from="1619374700392" duration="1190000" />
       <workItem from="1619448886348" duration="592000" />
+      <workItem from="1619472822877" duration="142000" />
+      <workItem from="1619537315689" duration="466000" />
+      <workItem from="1619539255973" duration="264000" />
     </task>
     <servers />
   </component>
