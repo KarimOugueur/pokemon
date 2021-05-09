@@ -1,7 +1,4 @@
 # Web Engineering Project, M1 IL ISTIC  
-# Binôme
-    Karim OUGUEUR
-    Nicolas Demongeot 
 
 # Description : 
 This project is the continuation of the tp1, we took the tp1 and we added features such as:
