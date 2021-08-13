@@ -4,7 +4,8 @@
 This project is the continuation of the tp1, we took the tp1 and we added features such as:
    *  Retrives all pokemons (here we get only 200 pokemons)
    *  Home page: search bar to look for a pokemon either with the name or ID. 
-   *  Pokedex: display of all the pokemons, by clicking an pokemon we display     characteristics of each pokemo. 
+   *  Pokedex: display of all the pokemons
+   *   Display the characteristics of each pokemon. 
 
 # AngularApp
 
